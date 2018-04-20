@@ -1,0 +1,29 @@
+TODO
+  facebook post
+  twitter post
+  funny ldjam video
+
+  start LDJam 41 :D
+  think about theme
+
+  (release)
+  itch.io theme
+  itch.io make page public
+  update all the links
+
+
+
+Links (from everything to everything else)
+  spiel
+    This is a submission for [Ludum Dare 41]().
+    Download the game on [itch.io]()!
+    Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_41).
+    I'm on [Twitter](https://twitter.com/markopolodev).
+    I'm on [Twitch](https://www.twitch.tv/markopolodev)!
+  link locations
+    LDJam page
+    itch.io
+    Github / readme
+    Twitter
+    Twitch
+

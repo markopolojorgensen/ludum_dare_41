@@ -1,0 +1,7 @@
+DONE
+  itch.io page
+  README.md
+  git repo
+  godot project for ldjam 41
+
+
