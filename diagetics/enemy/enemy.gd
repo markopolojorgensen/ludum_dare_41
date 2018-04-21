@@ -37,3 +37,9 @@ func die():
 func is_enemy():
 	return true
 
+func slow():
+	$movement.slow()
+
+func unslow():
+	$movement.unslow()
+

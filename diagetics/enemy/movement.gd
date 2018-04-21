@@ -1,7 +1,10 @@
 extends Node2D
 
 var impulse_size = 1000
-var max_speed = 100
+var default_max_speed = 100
+var max_speed = default_max_speed
+
+var slowed_amount = 0
 
 var is_left = true
 var is_right = false
@@ -31,5 +34,11 @@ func stop():
 	is_left = false
 	is_right = false
 
+func slow():
+	slowed_amount += 1
+	max_speed = default_max_speed - (slowed_amount * 20)
 
+func unslow():
+	slowed_amount -= 1
+	max_speed = default_max_speed - (slowed_amount * 20)
 

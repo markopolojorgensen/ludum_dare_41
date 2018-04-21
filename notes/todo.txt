@@ -1,5 +1,8 @@
 TODO
   code like a madman
+  enemies fade in on spawn
+  towers spin
+  increase core shields by shooting at it
   player dash animation
   custom enemy reclaim core animation
   (release)
@@ -13,11 +16,6 @@ art
     spikes
     tombstones?
     kelp
-
-enemies should randomize z level around player for depth effect
-if enemies die in core zone, they need to stop depleting core shield
-increase core shields by shooting at it
-
 
 UI elements
   core shield UI elements

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://diagetics/player/player.gd" type="Script" id=1]
 [ext_resource path="res://diagetics/player/player_move_left_1.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://diagetics/player/movement.gd" type="Script" id=14]
 [ext_resource path="res://diagetics/player/jump.gd" type="Script" id=15]
 [ext_resource path="res://diagetics/player/weapon.gd" type="Script" id=16]
+[ext_resource path="res://diagetics/player/tower_placer.gd" type="Script" id=17]
 
 [sub_resource type="CapsuleShape2D" id=2]
 
@@ -114,6 +115,7 @@ script = ExtResource( 15 )
 
 [node name="weapon" type="Node2D" parent="." index="5"]
 
+editor/display_folded = true
 script = ExtResource( 16 )
 body_path = NodePath("..")
 
@@ -123,5 +125,9 @@ process_mode = 1
 wait_time = 0.15
 one_shot = false
 autostart = false
+
+[node name="tower_placer" type="Node2D" parent="." index="6"]
+
+script = ExtResource( 17 )
 
 

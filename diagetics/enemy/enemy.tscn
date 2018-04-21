@@ -52,7 +52,7 @@ custom_solver_bias = 0.0
 radius = 18.0
 height = 15.0
 
-[node name="enemy" type="RigidBody2D" index="0"]
+[node name="enemy" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 4

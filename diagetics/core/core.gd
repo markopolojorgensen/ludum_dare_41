@@ -28,7 +28,6 @@ func body_exited(body):
 		is_charging = false
 		$sprite.play("default")
 	elif body.has_method("is_enemy") and body.is_enemy():
-		print("enemy exited")
 		enemies -= 1
 
 func _process(delta):

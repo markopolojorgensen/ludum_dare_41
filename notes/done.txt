@@ -1,4 +1,6 @@
 DONE
+  if enemies die in core zone, they need to stop depleting core shield
+  enemies should randomize z level around player for depth effect
   spawner art
   enemy art
   core art
