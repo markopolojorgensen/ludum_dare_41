@@ -1,4 +1,14 @@
 DONE
+  spawner art
+  enemy art
+  core art
+  tower art
+  level art
+  player art
+  think about theme
+  funny ldjam video
+  facebook post
+  twitter post
   itch.io page
   README.md
   git repo

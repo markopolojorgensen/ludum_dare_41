@@ -1,15 +1,103 @@
 TODO
-  facebook post
-  twitter post
-  funny ldjam video
-
-  start LDJam 41 :D
-  think about theme
-
+  code like a madman
+  player dash animation
+  custom enemy reclaim core animation
   (release)
   itch.io theme
   itch.io make page public
   update all the links
+
+
+art
+  level decorations
+    spikes
+    tombstones?
+    kelp
+
+enemies should randomize z level around player for depth effect
+if enemies die in core zone, they need to stop depleting core shield
+increase core shields by shooting at it
+
+
+UI elements
+  core shield UI elements
+  tower selector UI
+
+
+
+
+level
+  "desert" - dash core
+  "mountain" - shooter core
+enemies
+  move towards cores
+towers
+  shoot
+  target enemies
+platforms
+player
+  move
+  jump
+  shoot
+  dash
+bullets
+  damage enemies
+  turn into aoe damage
+doors
+  opened by core activation
+
+every core starts with a few nearby enemies
+
+Activate All Cores to Win
+Activating a Core Causes a Big Wave
+Cores are Deactivated if Enough Enemies Reach Them
+If a Core is Deactivated You Lose its Benefit
+
+
+Tower defense Platformer
+  cores
+    some cores are powerups
+      shooting ability
+      player moves faster
+      player and tower weapons damage in AOE
+      dash / boost
+    some cores are tower types
+      shooter
+      aoe slow tower
+      amplifier
+        increases shooter speed
+        increases slow effect
+        increases player move, shoot speed
+        increases aoe size of bullets if aoe is activated
+
+    acquiring X cores unlocks shortcuts between areas?
+
+  player movement destroys enemies?
+  main goal: destroy enemy core
+  cores unlock doors, unlock all doors to get access to enemy core
+  wave size scales with number of activated cores
+  tower availability scales with number of activated cores
+  all cores are sort of under attack constantly
+  core shields regenerate
+    only when player is nearby?
+  there are specific places for enemies to spawn
+  there are hud elements to tell you core shield status
+  when a tower core shield fails, should the corresponding towers be destroyed?
+    yes?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -27,3 +115,21 @@ Links (from everything to everything else)
     Twitter
     Twitch
 
+MUZAC
+  Donkey Kong Country
+  cave story
+  fez ost                https://www.youtube.com/watch?v=wR6dheZ4fUs
+  ror ost                https://www.youtube.com/watch?v=2ypzpl02Rps
+  
+  secret of mana ost     https://www.youtube.com/watch?v=mGK3usiX31s
+  Bound Together
+  FF12
+  aom
+  ffcc
+  botw                   https://www.youtube.com/watch?v=7d1DQWqTgBc
+  ff tactics             https://www.youtube.com/watch?v=FitRzyV2jw8
+  shadow of the colossus https://www.youtube.com/watch?v=pmoYLtObCtY
+  hld ost                https://www.youtube.com/watch?v=bq7a_ktfYck
+  chrono trigger ost     https://www.youtube.com/watch?v=mEoN_Xe-B-s
+  ff6 ost                https://www.youtube.com/watch?v=sLpjPht5mvg
+  hollow knight ost      https://www.youtube.com/watch?v=0HbnqjGirFg

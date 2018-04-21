@@ -1,0 +1,100 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://diagetics/core/core.gd" type="Script" id=1]
+[ext_resource path="res://diagetics/core/core_1.png" type="Texture" id=2]
+[ext_resource path="res://diagetics/core/core_2.png" type="Texture" id=3]
+[ext_resource path="res://diagetics/core/core_3.png" type="Texture" id=4]
+[ext_resource path="res://diagetics/core/core_4.png" type="Texture" id=5]
+[ext_resource path="res://diagetics/core/core_5.png" type="Texture" id=6]
+[ext_resource path="res://diagetics/core/core_6.png" type="Texture" id=7]
+[ext_resource path="res://diagetics/core/core_7.png" type="Texture" id=8]
+[ext_resource path="res://diagetics/core/core_8.png" type="Texture" id=9]
+[ext_resource path="res://diagetics/core/core_9.png" type="Texture" id=10]
+[ext_resource path="res://diagetics/core/core_10.png" type="Texture" id=11]
+[ext_resource path="res://diagetics/core/core_11.png" type="Texture" id=12]
+[ext_resource path="res://diagetics/core/core_bubble.png" type="Texture" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "shine",
+"speed": 12.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 400.0
+
+[node name="core" type="Node2D"]
+
+z_index = -1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+core_name = "weapon"
+
+[node name="sprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 5, 5 )
+frames = SubResource( 1 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="zone" type="Area2D" parent="." index="1"]
+
+visible = false
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 6
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zone" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="shield" type="TextureProgress" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = -105.0
+margin_bottom = -65.0
+rect_scale = Vector2( 5, 5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 13 )
+fill_mode = 5
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, -1 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Mouse", "Radial Fill", "Textures" ]
+
+

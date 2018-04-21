@@ -1,0 +1,127 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://diagetics/player/player.gd" type="Script" id=1]
+[ext_resource path="res://diagetics/player/player_move_left_1.png" type="Texture" id=2]
+[ext_resource path="res://diagetics/player/player_move_left_2.png" type="Texture" id=3]
+[ext_resource path="res://diagetics/player/player_move_left_3.png" type="Texture" id=4]
+[ext_resource path="res://diagetics/player/player_move_left_4.png" type="Texture" id=5]
+[ext_resource path="res://diagetics/player/player_move_right_1.png" type="Texture" id=6]
+[ext_resource path="res://diagetics/player/player_move_right_2.png" type="Texture" id=7]
+[ext_resource path="res://diagetics/player/player_move_right_3.png" type="Texture" id=8]
+[ext_resource path="res://diagetics/player/player_move_right_4.png" type="Texture" id=9]
+[ext_resource path="res://diagetics/player/player_idle_1.png" type="Texture" id=10]
+[ext_resource path="res://diagetics/player/player_idle_2.png" type="Texture" id=11]
+[ext_resource path="res://diagetics/player/player_idle_3.png" type="Texture" id=12]
+[ext_resource path="res://diagetics/player/player_idle_4.png" type="Texture" id=13]
+[ext_resource path="res://diagetics/player/movement.gd" type="Script" id=14]
+[ext_resource path="res://diagetics/player/jump.gd" type="Script" id=15]
+[ext_resource path="res://diagetics/player/weapon.gd" type="Script" id=16]
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 15.0
+height = 20.0
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "left",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "right",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "idle",
+"speed": 12.0
+} ]
+
+[node name="player" type="RigidBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 1
+mode = 2
+mass = 1.0
+friction = 0.1
+bounce = 0.0
+gravity_scale = 10.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 10
+contact_monitor = true
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Linear" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+position = Vector2( 0, 10 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="sprite" type="AnimatedSprite" parent="." index="1"]
+
+scale = Vector2( 5, 5 )
+frames = SubResource( 1 )
+animation = "idle"
+_sections_unfolded = [ "Transform" ]
+
+[node name="Camera2D" type="Camera2D" parent="." index="2"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.1
+drag_margin_top = 0.1
+drag_margin_right = 0.1
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Smoothing" ]
+
+[node name="movement" type="Node2D" parent="." index="3"]
+
+script = ExtResource( 14 )
+
+[node name="jump" type="Node2D" parent="." index="4"]
+
+script = ExtResource( 15 )
+
+[node name="weapon" type="Node2D" parent="." index="5"]
+
+script = ExtResource( 16 )
+body_path = NodePath("..")
+
+[node name="firing_interval" type="Timer" parent="weapon" index="0"]
+
+process_mode = 1
+wait_time = 0.15
+one_shot = false
+autostart = false
+
+

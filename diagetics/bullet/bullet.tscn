@@ -1,0 +1,101 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://diagetics/bullet/bullet.gd" type="Script" id=1]
+[ext_resource path="res://diagetics/bullet/bullet_pop_1.png" type="Texture" id=2]
+[ext_resource path="res://diagetics/bullet/bullet_pop_2.png" type="Texture" id=3]
+[ext_resource path="res://diagetics/bullet/bullet_pop_3.png" type="Texture" id=4]
+[ext_resource path="res://diagetics/bullet/bullet_pop_4.png" type="Texture" id=5]
+[ext_resource path="res://diagetics/bullet/bullet_pop_5.png" type="Texture" id=6]
+[ext_resource path="res://diagetics/bullet/bullet_pop_6.png" type="Texture" id=7]
+[ext_resource path="res://diagetics/bullet/bullet_pop_7.png" type="Texture" id=8]
+[ext_resource path="res://diagetics/bullet/bullet_pop_8.png" type="Texture" id=9]
+[ext_resource path="res://diagetics/bullet/bullet_pop_9.png" type="Texture" id=10]
+[ext_resource path="res://diagetics/bullet/bullet_pop_10.png" type="Texture" id=11]
+[ext_resource path="res://diagetics/bullet/bullet_spawn_1.png" type="Texture" id=12]
+[ext_resource path="res://diagetics/bullet/bullet_spawn_2.png" type="Texture" id=13]
+[ext_resource path="res://diagetics/bullet/bullet_spawn_3.png" type="Texture" id=14]
+
+[sub_resource type="CircleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "pop",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "spawn",
+"speed": 20.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 14.0
+
+[node name="bullet" type="RigidBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 0.01
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 1 )
+
+[node name="secret not really there body" type="CollisionShape2D" parent="." index="0"]
+
+visible = false
+shape = SubResource( 3 )
+disabled = true
+
+[node name="sprite" type="AnimatedSprite" parent="." index="1"]
+
+scale = Vector2( 5, 5 )
+frames = SubResource( 1 )
+animation = "spawn"
+_sections_unfolded = [ "Transform" ]
+
+[node name="area" type="Area2D" parent="." index="2"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+collision_mask = 5
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="pop_timer" type="Timer" parent="." index="3"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
+
+

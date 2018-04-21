@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://diagetics/level/tileset_level_resource.tres" type="TileSet" id=1]
+[ext_resource path="res://diagetics/level/background_solid.png" type="Texture" id=2]
+[ext_resource path="res://diagetics/core/core.tscn" type="PackedScene" id=3]
+
+[node name="level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+scale = Vector2( 5, 5 )
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -65531, 1073741828, 0, -65530, 1073741828, 0, -65529, 1073741828, 0, -65528, 1073741828, 0, -65527, 1073741828, 0, -65526, 1073741828, 0, -65525, 1073741828, 0, -65524, 1073741828, 0, 5, 1073741828, 0, 12, 1073741828, 0, 65541, 1073741828, 0, 65548, 1073741828, 0, 131073, 1073741828, 0, 131074, 1073741828, 0, 131075, 1073741828, 0, 131076, 1073741828, 0, 131077, 1073741828, 0, 131084, 1073741828, 0, 131085, 1073741828, 0, 131086, 1073741828, 0, 262143, -1610612732, 0, 196634, 4, 0, 196635, 4, 0, 196638, 4, 0, 196639, 4, 0, 327679, -1610612732, 0, 393215, 11, 0, 327680, 4, 0, 327681, 4, 0, 327682, 4, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 327700, 4, 0, 327701, 4, 0, 327702, 4, 0, 327703, 4, 0, 327704, 4, 0, 327705, 4, 0, 327712, 4, 0, 327713, 4, 0, 327714, 4, 0, 327715, 4, 0, 393231, 4, 0, 393236, 4, 0, 393241, 4, 0, 393248, 4, 0, 458767, 4, 0, 458769, 4, 0, 458770, 4, 0, 458772, 4, 0, 458777, 4, 0, 458780, 4, 0, 458781, 4, 0, 458784, 4, 0, 524303, 4, 0, 524308, 4, 0, 524313, 4, 0, 524320, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 4, 0, 589844, 4, 0, 589849, 4, 0, 589850, 4, 0, 589851, 4, 0, 589854, 4, 0, 589855, 4, 0, 589856, 4, 0, 655375, 4, 0, 655380, 4, 0, 655385, 4, 0, 655392, 4, 0, 720911, 4, 0, 720914, 4, 0, 720915, 4, 0, 720916, 4, 0, 720921, 4, 0, 720923, 4, 0, 720924, 4, 0, 720928, 4, 0, 786457, 4, 0, 786464, 4, 0, 851993, 4, 0, 851994, 4, 0, 851995, 4, 0, 852000, 4, 0, 917529, 4, 0, 917533, 4, 0, 917534, 4, 0, 917536, 4, 0, 983065, 4, 0, 983072, 4, 0, 1048601, 4, 0, 1048608, 4, 0, 1114137, 4, 0, 1114139, 4, 0, 1114140, 4, 0, 1114144, 4, 0, 1179673, 4, 0, 1179678, 4, 0, 1179679, 4, 0, 1179680, 4, 0, 1245209, 4, 0, 1245216, 4, 0, 1310745, 4, 0, 1310752, 4, 0, 1376281, 4, 0, 1376288, 4, 0, 1441817, 4, 0, 1441824, 4, 0, 1507353, 4, 0, 1507360, 4, 0, 1572889, 4, 0, 1572896, 4, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="1"]
+
+layer = -5
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer" index="0"]
+
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="cores" type="Node2D" parent="." index="2"]
+
+[node name="core" parent="cores" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 730, 360 )
+core_name = "weapon"
+
+
