@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://diagetics/spawner/spawner.gd" type="Script" id=1]
+[ext_resource path="res://diagetics/spawner/spawner.png" type="Texture" id=2]
+
+[node name="spawner" type="Node2D"]
+
+z_index = -5
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+scale = Vector2( 5, 5 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="spawn_interval" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = false
+autostart = true
+
+

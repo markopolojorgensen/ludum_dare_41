@@ -5,6 +5,9 @@ func _ready():
 	$sprite.play("spawn")
 
 func collision(body):
+	if body.has_method("is_enemy") and body.is_enemy():
+		body.hit_by_bullet()
+	
 	set_linear_velocity(get_linear_velocity() * 0.08)
 	$sprite.play("pop")
 	

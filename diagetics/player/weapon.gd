@@ -26,7 +26,7 @@ func fire_ze_missile():
 	inst.set_global_position(get_global_position())
 	get_parent().get_parent().add_child(inst)
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)
-	body.apply_impulse(Vector2(), -direction.normalized() * bullet_impulse * 0.4)
+	body.apply_impulse(Vector2(), -direction.normalized() * bullet_impulse * 0.3)
 
 func enable():
 	enabled = true
