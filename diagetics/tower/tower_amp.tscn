@@ -14,7 +14,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="tower_amp" index="0" instance=ExtResource( 1 )]
+[node name="tower_amp" instance=ExtResource( 1 )]
 
 [node name="sprite" parent="." index="2"]
 
