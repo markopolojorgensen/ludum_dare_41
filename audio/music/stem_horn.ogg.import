@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stem_horn.ogg-8f2d512a7e0d4d3a4c243cfebe48e011.oggstr"
+
+[deps]
+
+source_file="res://audio/music/stem_horn.ogg"
+source_md5="75bdc81930a27b1070af9c845cc6862e"
+
+dest_files=[ "res://.import/stem_horn.ogg-8f2d512a7e0d4d3a4c243cfebe48e011.oggstr" ]
+dest_md5="f89320f0c666489c9b40c0c39573f4bb"
+
+[params]
+
+loop=true
+loop_offset=0.2

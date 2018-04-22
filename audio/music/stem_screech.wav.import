@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stem_screech.wav-c4a0d461f71a9ef732b112ac1f03159d.sample"
+
+[deps]
+
+source_file="res://audio/music/stem_screech.wav"
+source_md5="821c06279da7951f390147b036a5c798"
+
+dest_files=[ "res://.import/stem_screech.wav-c4a0d461f71a9ef732b112ac1f03159d.sample" ]
+dest_md5="805130e3944c5f63a5b37ed66747efc4"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

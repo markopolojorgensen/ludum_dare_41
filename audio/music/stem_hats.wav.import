@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stem_hats.wav-72709ca7c1cdb0fcc0b526389d4aed87.sample"
+
+[deps]
+
+source_file="res://audio/music/stem_hats.wav"
+source_md5="c8d2fa66757aa6173d02e336d74743fb"
+
+dest_files=[ "res://.import/stem_hats.wav-72709ca7c1cdb0fcc0b526389d4aed87.sample" ]
+dest_md5="f6d4fc70933b5a96d9741839020e6178"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

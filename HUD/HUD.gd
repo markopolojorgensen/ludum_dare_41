@@ -50,3 +50,6 @@ func tower_access_revoked(tower_type):
 	else:
 		print("TSNH: HUD: tower access granted: weird tower type: " + str(tower_type))
 
+func win():
+	$AnimationPlayer.play("fade_out")
+

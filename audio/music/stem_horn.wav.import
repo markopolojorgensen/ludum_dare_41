@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stem_horn.wav-11862887bc5345bd5b5184dd612939cb.sample"
+
+[deps]
+
+source_file="res://audio/music/stem_horn.wav"
+source_md5="5f513b366ccb61e4fe7cb6889276fe9b"
+
+dest_files=[ "res://.import/stem_horn.wav-11862887bc5345bd5b5184dd612939cb.sample" ]
+dest_md5="0e80e46a8d14bd7605254b969f3326f9"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

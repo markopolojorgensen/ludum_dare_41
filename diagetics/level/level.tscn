@@ -48,6 +48,8 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="cores" type="Node2D" parent="." index="2"]
 
+editor/display_folded = true
+
 [node name="core_weapon" parent="cores" index="0" instance=ExtResource( 3 )]
 
 position = Vector2( 730, 360 )

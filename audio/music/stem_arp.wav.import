@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stem_arp.wav-3efa9464f0e707add76d189852de4667.sample"
+
+[deps]
+
+source_file="res://audio/music/stem_arp.wav"
+source_md5="9d611cd08abb5c39c60932f6a3a59bbf"
+
+dest_files=[ "res://.import/stem_arp.wav-3efa9464f0e707add76d189852de4667.sample" ]
+dest_md5="3707fcda7cbfc48f2508ce5c03ad9c04"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

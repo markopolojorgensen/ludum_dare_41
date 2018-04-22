@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stem_bass.ogg-68823c3a158f91affaea9d84da7f3daf.oggstr"
+
+[deps]
+
+source_file="res://audio/music/stem_bass.ogg"
+source_md5="9ecdbeff8ebca47b315e2846b0c53b5b"
+
+dest_files=[ "res://.import/stem_bass.ogg-68823c3a158f91affaea9d84da7f3daf.oggstr" ]
+dest_md5="47826209c38398355fc223e866c41198"
+
+[params]
+
+loop=true
+loop_offset=0.2

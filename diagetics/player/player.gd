@@ -44,5 +44,9 @@ func speed_up():
 func slow_down():
 	$movement.slow_down()
 
-
+func lose_control():
+	$movement.disable()
+	$weapon.disable()
+	$jump.disable()
+	$tower_placer.disable()
 

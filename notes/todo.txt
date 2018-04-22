@@ -1,7 +1,4 @@
 TODO
-  code like a madman
-  amp particle effect
-  slow particle effect
   music
   logo intro
   BUTTON

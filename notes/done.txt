@@ -1,5 +1,7 @@
 DONE
-  aoe blast
+  code like a madman
+  aoe blast  amp particle effect
+  slow particle effect
   dynamic max tower count
   revoking access destroys towers
   core shield health widget

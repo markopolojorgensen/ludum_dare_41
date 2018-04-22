@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stem_arp.ogg-92ccf8847db6493772fe6416280293e9.oggstr"
+
+[deps]
+
+source_file="res://audio/music/stem_arp.ogg"
+source_md5="496cee15c0737d411f429c6a2e573742"
+
+dest_files=[ "res://.import/stem_arp.ogg-92ccf8847db6493772fe6416280293e9.oggstr" ]
+dest_md5="8142dbe45e75ba11958ed1454a69cc77"
+
+[params]
+
+loop=true
+loop_offset=0.2

@@ -8,7 +8,12 @@ var is_right
 var is_up
 var is_down
 
+var enabled = true
+
 func do_movement(body, state):
+	if not enabled:
+		return
+	
 	is_left = Input.is_action_pressed("move_left")
 	is_right = Input.is_action_pressed("move_right")
 	is_up = Input.is_action_pressed("move_up")
@@ -48,6 +53,7 @@ func speed_up():
 func slow_down():
 	max_speed -= 200
 
-
+func disable():
+	enabled = false
 
 

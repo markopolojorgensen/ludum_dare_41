@@ -38,6 +38,7 @@ func enable():
 
 func disable():
 	enabled = false
+	$firing_interval.stop()
 
 func is_shooting():
 	return not $firing_interval.is_stopped()

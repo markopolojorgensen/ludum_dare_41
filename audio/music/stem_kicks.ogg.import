@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stem_kicks.ogg-80760dde73ee45019a9b91674d2e5c6d.oggstr"
+
+[deps]
+
+source_file="res://audio/music/stem_kicks.ogg"
+source_md5="339d5da012107b9b116741e72675837a"
+
+dest_files=[ "res://.import/stem_kicks.ogg-80760dde73ee45019a9b91674d2e5c6d.oggstr" ]
+dest_md5="d19ce6c7c2ac00590a47892f8699006e"
+
+[params]
+
+loop=true
+loop_offset=0.2

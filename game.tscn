@@ -1,9 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://game.gd" type="Script" id=1]
 [ext_resource path="res://diagetics/level/level.tscn" type="PackedScene" id=2]
 [ext_resource path="res://diagetics/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://audio/music/stem_horn.ogg" type="AudioStream" id=5]
+[ext_resource path="res://audio/music/stem_arp.ogg" type="AudioStream" id=6]
+[ext_resource path="res://audio/music/stem_hats.ogg" type="AudioStream" id=7]
+[ext_resource path="res://audio/music/stem_bass.ogg" type="AudioStream" id=8]
+[ext_resource path="res://audio/music/stem_kicks.ogg" type="AudioStream" id=9]
+[ext_resource path="res://audio/music/stem_screech.ogg" type="AudioStream" id=10]
+[ext_resource path="res://HUD/win_screen.tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 200, 80 )
 
 [node name="game" type="Node"]
 
@@ -16,5 +28,76 @@ script = ExtResource( 1 )
 position = Vector2( 33.8186, -527.709 )
 
 [node name="HUD" parent="." index="2" instance=ExtResource( 4 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 6 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 7 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="." index="6"]
+
+stream = ExtResource( 8 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="." index="7"]
+
+stream = ExtResource( 9 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="." index="8"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
+
+[node name="win_screen" parent="." index="9" instance=ExtResource( 11 )]
+
+[node name="win_gate" type="Area2D" parent="." index="10"]
+
+position = Vector2( 3681.94, 1384.95 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="win_gate" index="0"]
+
+shape = SubResource( 1 )
 
 
