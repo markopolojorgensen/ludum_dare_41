@@ -1,14 +1,22 @@
 TODO
   code like a madman
-  BUTTON
+  aoe blast
   amp particle effect
-  enemies fade in on spawn
+  slow particle effect
+  music
+  logo intro
+  BUTTON
+  parallax background visuals
   towers spin
-  center symbol numbers =(
+  modulate core shield indicators when especially low
+
+  enemies fade in on spawn
   cooler font
+  center symbol numbers =(
   increase core shields by shooting at it
-  player dash animation
   custom enemy reclaim core animation
+  player dash animation
+
   (release)
   itch.io theme
   itch.io make page public
@@ -16,7 +24,6 @@ TODO
   change enemy framerate based on slow aoe effects
 
 
-modulate core shield indicators when especially low
 
 sfx
   door
@@ -139,21 +146,3 @@ Links (from everything to everything else)
     Twitter
     Twitch
 
-MUZAC
-  Donkey Kong Country
-  cave story
-  fez ost                https://www.youtube.com/watch?v=wR6dheZ4fUs
-  ror ost                https://www.youtube.com/watch?v=2ypzpl02Rps
-  FF12
-  secret of mana ost     https://www.youtube.com/watch?v=mGK3usiX31s
-  Bound Together
-  hld ost                https://www.youtube.com/watch?v=bq7a_ktfYck
-  hollow knight ost      https://www.youtube.com/watch?v=0HbnqjGirFg
-  ffcc
-  chrono trigger ost     https://www.youtube.com/watch?v=mEoN_Xe-B-s
-  shadow of the colossus https://www.youtube.com/watch?v=pmoYLtObCtY
-  aom
-  
-  botw                   https://www.youtube.com/watch?v=7d1DQWqTgBc
-  ff tactics             https://www.youtube.com/watch?v=FitRzyV2jw8
-  ff6 ost                https://www.youtube.com/watch?v=sLpjPht5mvg

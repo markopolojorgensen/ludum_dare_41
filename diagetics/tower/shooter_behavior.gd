@@ -14,6 +14,7 @@ func _ready():
 	tower = get_parent()
 	$firing_interval.connect("timeout", self, "shoot_at_target")
 	update_amp_speed()
+	add_to_group("core_listeners")
 
 func _process(delta):
 	if target == null or not target.get_ref() or not target.get_ref().is_alive():
@@ -48,6 +49,7 @@ func shoot_at_target():
 	
 	var direction = target.get_ref().get_global_position() - get_global_position()
 	var inst = bullet_scene.instance()
+	inst.explode = global.booms
 	inst.set_global_position(get_global_position())
 	get_parent().get_parent().add_child(inst)
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)

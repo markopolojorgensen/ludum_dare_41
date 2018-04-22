@@ -21,6 +21,12 @@ func enable_shooting():
 func disable_shooting():
 	$weapon.disable()
 
+func enable_booms():
+	$weapon.enable_booms()
+
+func disable_booms():
+	$weapon.disable_booms()
+
 func is_shooting():
 	return $weapon.is_shooting()
 

@@ -18,6 +18,9 @@ func core_activated(core_name):
 		get_tree().call_group("tower_access", "tower_access_granted", global.TOWER_TYPE.AMP)
 	elif core_name == "aoe_slow":
 		get_tree().call_group("tower_access", "tower_access_granted", global.TOWER_TYPE.AOE_SLOW)
+	elif core_name == "blast":
+		$player.enable_booms()
+		global.booms = true
 	else:
 		print("new core: " + str(core_name))
 	
@@ -33,6 +36,9 @@ func core_deactivated(core_name):
 		get_tree().call_group("tower_access", "tower_access_revoked", global.TOWER_TYPE.AMP)
 	elif core_name == "aoe_slow":
 		get_tree().call_group("tower_access", "tower_access_revoked", global.TOWER_TYPE.AOE_SLOW)
+	elif core_name == "blast":
+		$player.disable_booms()
+		global.booms = false
 	else:
 		print("new core: " + str(core_name))
 	

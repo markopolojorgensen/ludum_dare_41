@@ -10,8 +10,9 @@ var bullet_scene = preload("res://diagetics/bullet/bullet.tscn")
 var enabled = false
 var bullet_impulse = 1000
 
+var booms = false
+
 func _ready():
-	# enabled = true #LUL
 	$firing_interval.connect("timeout", self, "fire_ze_missile")
 
 func _unhandled_input(event):
@@ -28,6 +29,7 @@ func fire_ze_missile():
 	inst.set_global_position(get_global_position())
 	get_parent().get_parent().add_child(inst)
 	inst.damage = 3
+	inst.explode = booms
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)
 	body.apply_impulse(Vector2(), -direction.normalized() * bullet_impulse * 0.5)
 
@@ -53,7 +55,11 @@ func update_amp_speed():
 	# print(firing_bonus)
 	$firing_interval.set_wait_time(0.15 * firing_bonus)
 
+func enable_booms():
+	booms = true
 
+func disable_booms():
+	booms = false
 
 
 

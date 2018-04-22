@@ -24,7 +24,7 @@ radius = 500.0
 custom_solver_bias = 0.0
 extents = Vector2( 5, 5 )
 
-[node name="tower" type="StaticBody2D" index="0"]
+[node name="tower" type="StaticBody2D"]
 
 input_pickable = false
 collision_layer = 8
