@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://HUD/HUD.gd" type="Script" id=1]
 [ext_resource path="res://HUD/enemy_count.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://HUD/tower_selector_aoe_slow.tscn" type="PackedScene" id=4]
 [ext_resource path="res://HUD/tower_selector_amp.tscn" type="PackedScene" id=5]
 [ext_resource path="res://HUD/core_shield_widget.tscn" type="PackedScene" id=6]
+[ext_resource path="res://audio/sfx/menu_selection.wav" type="AudioStream" id=7]
 
 [sub_resource type="Animation" id=1]
 
@@ -38,7 +39,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[node name="HUD" type="CanvasLayer" index="0"]
+[node name="HUD" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -224,5 +225,13 @@ playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/fade_out = SubResource( 1 )
 blend_times = [  ]
+
+[node name="selection_sound" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 7 )
+volume_db = -15.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 

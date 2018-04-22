@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/amp_hum.wav-c15b16eaa7a8d42e66e8985abc295fa5.sample"
+
+[deps]
+
+source_file="res://audio/sfx/amp_hum.wav"
+source_md5="fa70d7e35c63773abdb985e03bc4b672"
+
+dest_files=[ "res://.import/amp_hum.wav-c15b16eaa7a8d42e66e8985abc295fa5.sample" ]
+dest_md5="fa6022a7f1c2be3540687d70d416055b"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

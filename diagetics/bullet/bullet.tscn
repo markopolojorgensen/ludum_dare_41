@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://diagetics/bullet/bullet.gd" type="Script" id=1]
 [ext_resource path="res://diagetics/bullet/bullet_pop_1.png" type="Texture" id=2]
@@ -28,6 +28,9 @@
 [ext_resource path="res://diagetics/bullet/bullet_spawn_1.png" type="Texture" id=26]
 [ext_resource path="res://diagetics/bullet/bullet_spawn_2.png" type="Texture" id=27]
 [ext_resource path="res://diagetics/bullet/bullet_spawn_3.png" type="Texture" id=28]
+[ext_resource path="res://audio/sfx/hit.wav" type="AudioStream" id=29]
+[ext_resource path="res://audio/sfx/hit_enemy.wav" type="AudioStream" id=30]
+[ext_resource path="res://audio/sfx/boom.wav" type="AudioStream" id=31]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -140,5 +143,35 @@ process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
+
+[node name="miss" type="AudioStreamPlayer2D" parent="." index="5"]
+
+stream = ExtResource( 29 )
+volume_db = -10.0
+autoplay = false
+max_distance = 1000.0
+attenuation = 2.0
+bus = "Master"
+area_mask = 1
+
+[node name="hit" type="AudioStreamPlayer2D" parent="." index="6"]
+
+stream = ExtResource( 30 )
+volume_db = -10.0
+autoplay = false
+max_distance = 1000.0
+attenuation = 2.0
+bus = "Master"
+area_mask = 1
+
+[node name="boom" type="AudioStreamPlayer2D" parent="." index="7"]
+
+stream = ExtResource( 31 )
+volume_db = -5.0
+autoplay = false
+max_distance = 1000.0
+attenuation = 1.23114
+bus = "Master"
+area_mask = 1
 
 

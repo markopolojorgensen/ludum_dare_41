@@ -41,6 +41,8 @@ func place_tower():
 	inst.set_global_position(get_global_mouse_position())
 	get_parent().get_parent().add_child(inst)
 	
+	$placement_sound.play()
+	
 	tower_lists[current_tower_type].append(inst)
 	while tower_lists[current_tower_type].size() > max_tower_count:
 		print("too many towers")

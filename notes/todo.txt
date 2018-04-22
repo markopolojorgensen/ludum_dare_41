@@ -1,5 +1,4 @@
 TODO
-  music
   logo intro
   BUTTON
   parallax background visuals
@@ -24,9 +23,10 @@ TODO
 sfx
   door
   bullet
-    fire
-    hit
-    miss
+    boom
+    X fire
+    X hit
+    X miss
   enemies
     spawn
     dance
@@ -34,10 +34,11 @@ sfx
     activation
     deactivation
   towers
-    shooting
+    selection
     placing
     amp
     slow
+    X shooting
 
 
 art

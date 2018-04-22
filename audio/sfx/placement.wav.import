@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/placement.wav-a3ab68c4d6e068ff08dae1b6c97b2acb.sample"
+
+[deps]
+
+source_file="res://audio/sfx/placement.wav"
+source_md5="776a3829fb348ba20c4ee4fba08ea398"
+
+dest_files=[ "res://.import/placement.wav-a3ab68c4d6e068ff08dae1b6c97b2acb.sample" ]
+dest_md5="51c9a3a1ae9f849f647cf3cb77cee20f"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

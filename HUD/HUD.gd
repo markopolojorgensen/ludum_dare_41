@@ -17,12 +17,18 @@ func _unhandled_input(event):
 	if event.is_action_pressed("tower_selection_1"):
 		shooter_widget.grab_focus()
 		get_tree().call_group("tower_selection_listeners", "tower_selected", global.TOWER_TYPE.SHOOTER)
+		if shooter_widget.enabled:
+			$selection_sound.play()
 	elif event.is_action_pressed("tower_selection_2"):
 		aoe_slow_widget.grab_focus()
 		get_tree().call_group("tower_selection_listeners", "tower_selected", global.TOWER_TYPE.AOE_SLOW)
+		if aoe_slow_widget.enabled:
+			$selection_sound.play()
 	elif event.is_action_pressed("tower_selection_3"):
 		amp_widget.grab_focus()
 		get_tree().call_group("tower_selection_listeners", "tower_selected", global.TOWER_TYPE.AMP)
+		if amp_widget.enabled:
+			$selection_sound.play()
 
 func core_shield_value_update(core_number, new_value):
 	if core_number == 0:

@@ -25,13 +25,17 @@ func _unhandled_input(event):
 
 func fire_ze_missile():
 	var direction = get_global_mouse_position() - get_global_position()
+	
 	var inst = bullet_scene.instance()
 	inst.set_global_position(get_global_position())
 	get_parent().get_parent().add_child(inst)
 	inst.damage = 3
 	inst.explode = booms
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)
+	
 	body.apply_impulse(Vector2(), -direction.normalized() * bullet_impulse * 0.5)
+	
+	$shooting_sound.play()
 
 func enable():
 	enabled = true

@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://diagetics/tower/tower.gd" type="Script" id=1]
 [ext_resource path="res://diagetics/fx/amp_visual_effect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://diagetics/tower/towers_center.png" type="Texture" id=3]
 [ext_resource path="res://diagetics/tower/towers_shooter.png" type="Texture" id=4]
 [ext_resource path="res://diagetics/tower/shooter_behavior.gd" type="Script" id=5]
+[ext_resource path="res://audio/sfx/shoot.wav" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -80,6 +81,16 @@ process_mode = 1
 wait_time = 1.2
 one_shot = false
 autostart = false
+
+[node name="sound" type="AudioStreamPlayer2D" parent="behavior" index="1"]
+
+stream = ExtResource( 6 )
+volume_db = -20.0
+autoplay = false
+max_distance = 1000.0
+attenuation = 2.0
+bus = "Master"
+area_mask = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="5"]
 

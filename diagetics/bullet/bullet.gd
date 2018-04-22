@@ -10,12 +10,18 @@ func _ready():
 func collision(body):
 	hit_body(body)
 	
+	if body.has_method("is_enemy") and body.is_enemy():
+		$hit.play()
+	else:
+		$miss.play()
+	
 	# don't collide with multiple enemies
 	$area/CollisionShape2D.set_disabled(true)
 	
 	set_linear_velocity(get_linear_velocity() * 0.08)
 	if explode:
 		$sprite.play("boom")
+		$boom.play()
 		for body in $boom_area.get_overlapping_bodies():
 			hit_body(body)
 	else:

@@ -53,6 +53,8 @@ func shoot_at_target():
 	inst.set_global_position(get_global_position())
 	get_parent().get_parent().add_child(inst)
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)
+	
+	$sound.play()
 
 func get_amped():
 	# print("shooter tower got amped")

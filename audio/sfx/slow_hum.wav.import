@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/slow_hum.wav-cfbbf7ba4a46ac6d656dccc59a752fe4.sample"
+
+[deps]
+
+source_file="res://audio/sfx/slow_hum.wav"
+source_md5="ae0bbdc26b96137a7ecfe5176cd239d0"
+
+dest_files=[ "res://.import/slow_hum.wav-cfbbf7ba4a46ac6d656dccc59a752fe4.sample" ]
+dest_md5="2330a7c7a08814e902d5f1710575f528"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0
