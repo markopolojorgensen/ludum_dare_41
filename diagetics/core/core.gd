@@ -1,6 +1,8 @@
 extends Node2D
 
 export(String) var core_name = "weapon"
+export(String) var help_text = "Left click to shoot."
+export(int) var core_number = 0
 
 var is_charging = false
 var is_activated = false
@@ -14,6 +16,7 @@ func _ready():
 	$shield.set_value(0)
 	$zone.connect("body_entered", self, "body_entered")
 	$zone.connect("body_exited", self, "body_exited")
+	$label_z/VBoxContainer/Label.set_text(str(core_number))
 
 func body_entered(body):
 	if body.get_name() == "player":
@@ -31,11 +34,22 @@ func body_exited(body):
 		enemies -= 1
 
 func _process(delta):
+	var old_shield = $shield.value
+	
 	if is_charging:
 		$shield.value += charge_rate * delta
 		if $shield.value >= $shield.max_value and not is_activated:
+			is_activated = true
 			get_tree().call_group("core_listeners", "core_activated", core_name)
+			$label_z/VBoxContainer/ability_help.set_text(help_text)
 	
 	$shield.value -= uncharge_rate * enemies * delta
+	if $shield.value <= 0 and old_shield > 0:
+		is_activated = false
+		get_tree().call_group("core_listeners", "core_deactivated", core_name)
+		$label_z/VBoxContainer/ability_help.set_text("")
+	
+	if old_shield != $shield.value:
+		get_tree().call_group("core_shield_value_listeners", "core_shield_value_update", core_number, $shield.value)
 
 

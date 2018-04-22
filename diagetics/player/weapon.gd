@@ -11,7 +11,7 @@ var enabled = false
 var bullet_impulse = 1000
 
 func _ready():
-	enabled = true #LUL
+	# enabled = true #LUL
 	$firing_interval.connect("timeout", self, "fire_ze_missile")
 
 func _unhandled_input(event):

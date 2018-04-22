@@ -6,4 +6,4 @@ enum TOWER_TYPE {
 	AMP,
 }
 
-
+var enemy_count = 0

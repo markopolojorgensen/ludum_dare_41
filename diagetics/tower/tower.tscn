@@ -24,7 +24,7 @@ radius = 500.0
 custom_solver_bias = 0.0
 extents = Vector2( 5, 5 )
 
-[node name="tower" type="StaticBody2D"]
+[node name="tower" type="StaticBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 8
@@ -74,7 +74,7 @@ script = ExtResource( 4 )
 [node name="firing_interval" type="Timer" parent="behavior" index="0"]
 
 process_mode = 1
-wait_time = 1.0
+wait_time = 1.2
 one_shot = false
 autostart = false
 

@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://HUD/HUD.gd" type="Script" id=1]
-[ext_resource path="res://HUD/tower_selector.tscn" type="PackedScene" id=2]
-[ext_resource path="res://HUD/tower_selector_aoe_slow.tscn" type="PackedScene" id=3]
-[ext_resource path="res://HUD/tower_selector_amp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://HUD/enemy_count.gd" type="Script" id=2]
+[ext_resource path="res://HUD/tower_selector.tscn" type="PackedScene" id=3]
+[ext_resource path="res://HUD/tower_selector_aoe_slow.tscn" type="PackedScene" id=4]
+[ext_resource path="res://HUD/tower_selector_amp.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD/core_shield_widget.tscn" type="PackedScene" id=6]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -13,13 +15,36 @@ rotation = 0.0
 scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 script = ExtResource( 1 )
+shooter_path = NodePath("m_con/vbox_con/tower_selectors/tower_selector_shooter")
+aoe_slow_path = NodePath("m_con/vbox_con/tower_selectors/tower_selector_aoe_slow")
+amp_path = NodePath("m_con/vbox_con/tower_selectors/tower_selector_amp")
 
-[node name="m_con" type="MarginContainer" parent="." index="0"]
+[node name="enemy_count" type="Label" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 2 )
+
+[node name="m_con" type="MarginContainer" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.0
+margin_bottom = 128.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -41,7 +66,7 @@ anchor_bottom = 0.0
 margin_left = 15.0
 margin_top = 15.0
 margin_right = 1009.0
-margin_bottom = 585.0
+margin_bottom = 113.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -68,20 +93,94 @@ size_flags_vertical = 1
 alignment = 0
 _sections_unfolded = [ "Focus", "Mouse" ]
 
-[node name="tower_selector_shooter" parent="m_con/vbox_con/tower_selectors" index="0" instance=ExtResource( 2 )]
+[node name="tower_selector_shooter" parent="m_con/vbox_con/tower_selectors" index="0" instance=ExtResource( 3 )]
 
 margin_bottom = 98.0
 
-[node name="tower_selector_aoe_slow" parent="m_con/vbox_con/tower_selectors" index="1" instance=ExtResource( 3 )]
+[node name="tower_selector_aoe_slow" parent="m_con/vbox_con/tower_selectors" index="1" instance=ExtResource( 4 )]
 
 margin_left = 84.0
 margin_right = 164.0
 margin_bottom = 98.0
 
-[node name="tower_selector_amp" parent="m_con/vbox_con/tower_selectors" index="2" instance=ExtResource( 4 )]
+[node name="tower_selector_amp" parent="m_con/vbox_con/tower_selectors" index="2" instance=ExtResource( 5 )]
 
 margin_left = 168.0
 margin_right = 248.0
 margin_bottom = 98.0
+
+[node name="m_con2" type="MarginContainer" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_right = 90.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/margin_right = 15
+custom_constants/margin_top = 15
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 15
+_sections_unfolded = [ "Focus", "Mouse" ]
+
+[node name="vbox_con" type="VBoxContainer" parent="m_con2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 75.0
+margin_bottom = 585.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 2
+_sections_unfolded = [ "Focus", "Mouse", "Rect" ]
+
+[node name="core_shield_widget6" parent="m_con2/vbox_con" index="0" instance=ExtResource( 6 )]
+
+margin_top = 262.0
+margin_bottom = 310.0
+core_number = 6
+
+[node name="core_shield_widget5" parent="m_con2/vbox_con" index="1" instance=ExtResource( 6 )]
+
+margin_top = 314.0
+margin_bottom = 362.0
+core_number = 5
+
+[node name="core_shield_widget4" parent="m_con2/vbox_con" index="2" instance=ExtResource( 6 )]
+
+margin_top = 366.0
+margin_bottom = 414.0
+core_number = 4
+
+[node name="core_shield_widget3" parent="m_con2/vbox_con" index="3" instance=ExtResource( 6 )]
+
+margin_top = 418.0
+margin_bottom = 466.0
+core_number = 3
+
+[node name="core_shield_widget2" parent="m_con2/vbox_con" index="4" instance=ExtResource( 6 )]
+
+margin_top = 470.0
+margin_bottom = 518.0
+core_number = 2
+
+[node name="core_shield_widget1" parent="m_con2/vbox_con" index="5" instance=ExtResource( 6 )]
+
+margin_top = 522.0
+margin_bottom = 570.0
+core_number = 1
 
 

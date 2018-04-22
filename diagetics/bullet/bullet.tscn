@@ -39,7 +39,7 @@ animations = [ {
 custom_solver_bias = 0.0
 radius = 14.0
 
-[node name="bullet" type="RigidBody2D"]
+[node name="bullet" type="RigidBody2D" index="0"]
 
 z_index = 5
 input_pickable = false

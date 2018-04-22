@@ -1,7 +1,7 @@
 extends Node2D
 
 var impulse_size = 1000
-var default_max_speed = 100
+var default_max_speed = 120
 var max_speed = default_max_speed
 
 var slowed_amount = 0
@@ -16,18 +16,19 @@ func do_movement(body, delta):
 	elif is_left:
 		body.apply_impulse(Vector2(), Vector2(-impulse_size * delta, 0))
 	
+	var horiz_vector = Vector2(1, 0)
+	var horiz_component = body.get_linear_velocity().dot(horiz_vector) * horiz_vector
+	
 	# going too fast
-	var lin_vel = body.get_linear_velocity()
-	if lin_vel.length() > max_speed:
+	if horiz_component.length() > max_speed:
 		# slow down
-		var slow_down_impulse = -1 * (lin_vel.length() - max_speed) * lin_vel.normalized()
+		var slow_down_impulse = -1 * (horiz_component.length() - max_speed) * horiz_component.normalized()
 		body.apply_impulse(Vector2(), slow_down_impulse)
 	
 	# natural slowdown
 	var no_input_pressed = not (is_left or is_right)
 	if no_input_pressed:
-		var horiz_vector = Vector2(1, 0)
-		var slow_down_impulse = -0.4 * lin_vel.dot(horiz_vector) * horiz_vector
+		var slow_down_impulse = -0.4 * horiz_component
 		body.apply_impulse(Vector2(), slow_down_impulse)
 
 func stop():

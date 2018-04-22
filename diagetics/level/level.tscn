@@ -26,7 +26,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( -65531, -1610612724, 0, -65530, 1073741828, 0, -65529, 1073741828, 0, -65528, 1073741828, 0, -65527, 1073741828, 0, -65526, 1073741828, 0, -65525, 1073741828, 0, -65524, -2147483635, 0, 5, -1610612732, 0, 12, -1073741820, 0, 65541, -1610612732, 0, 65548, -1073741820, 0, 131073, 1073741828, 0, 131074, 1073741828, 0, 131075, 1073741828, 0, 131076, 1073741828, 0, 131077, 1073741824, 0, 131084, 1610612737, 0, 131085, 1073741828, 0, 131086, 1073741828, 0, 262143, -1610612732, 0, 196634, 4, 0, 196635, 4, 0, 196638, 4, 0, 196639, 4, 0, 327679, -1610612732, 0, 393215, 11, 0, 327680, 4, 0, 327681, 4, 0, 327682, 4, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 327700, 4, 0, 327701, 4, 0, 327702, 4, 0, 327703, 4, 0, 327704, 4, 0, 327705, 4, 0, 327712, 4, 0, 327713, 4, 0, 327714, 4, 0, 327715, 4, 0, 393231, 4, 0, 393236, 4, 0, 393241, 4, 0, 393248, 4, 0, 458767, 4, 0, 458769, 4, 0, 458770, 4, 0, 458772, 4, 0, 458777, 4, 0, 458780, 4, 0, 458781, 4, 0, 458784, 4, 0, 524303, 4, 0, 524308, 4, 0, 524313, 4, 0, 524320, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 4, 0, 589844, 4, 0, 589849, 4, 0, 589850, 4, 0, 589851, 4, 0, 589854, 4, 0, 589855, 4, 0, 589856, 4, 0, 655375, 4, 0, 655380, 4, 0, 655385, 4, 0, 655392, 4, 0, 720911, 4, 0, 720914, 4, 0, 720915, 4, 0, 720916, 4, 0, 720921, 4, 0, 720923, 4, 0, 720924, 4, 0, 720928, 4, 0, 786457, 4, 0, 786464, 4, 0, 851993, 4, 0, 851994, 4, 0, 851995, 4, 0, 852000, 4, 0, 917529, 4, 0, 917533, 4, 0, 917534, 4, 0, 917536, 4, 0, 983065, 4, 0, 983072, 4, 0, 1048601, 4, 0, 1048608, 4, 0, 1114137, 4, 0, 1114139, 4, 0, 1114140, 4, 0, 1114144, 4, 0, 1179673, 4, 0, 1179678, 4, 0, 1179679, 4, 0, 1179680, 4, 0, 1245209, 4, 0, 1245216, 4, 0, 1310745, 4, 0, 1310752, 4, 0, 1376281, 4, 0, 1376288, 4, 0, 1441817, 4, 0, 1441824, 4, 0, 1507353, 4, 0, 1507360, 4, 0, 1572889, 4, 0, 1572896, 4, 0 )
+tile_data = PoolIntArray( -458753, -1610612722, 0, -524288, 1073741829, 0, -524287, -2147483636, 0, -393217, -536870908, 0, -458751, -1073741820, 0, -327681, -536870908, 0, -393215, -1073741820, 0, -393206, 6, 0, -393205, 6, 0, -393204, 6, 0, -393203, 6, 0, -393202, 6, 0, -393201, 6, 0, -262145, -536870908, 0, -327679, -1073741820, 0, -327665, 1073741830, 0, -196609, -536870908, 0, -262143, -1073741820, 0, -262129, 1073741830, 0, -131073, -536870908, 0, -196607, -1073741820, 0, -196593, 1073741830, 0, -65537, -536870908, 0, -131071, -1073741820, 0, -131057, 1073741830, 0, -1, -536870908, 0, -65535, -1073741820, 0, -65531, -1610612724, 0, -65530, 1073741828, 0, -65529, 1073741828, 0, -65528, 1073741831, 0, -65527, 1073741830, 0, -65526, 1073741831, 0, -65525, 1073741828, 0, -65524, -2147483635, 0, -65521, 1073741830, 0, 65535, -536870908, 0, 1, -1073741820, 0, 5, -1610612732, 0, 12, -1073741820, 0, 15, 1073741830, 0, 131071, -536870908, 0, 65537, -1073741820, 0, 65541, -1610612732, 0, 65548, -1073741820, 0, 65551, 1073741830, 0, 196607, -536870908, 0, 131073, -2147483645, 0, 131074, 1073741830, 0, 131075, 1073741831, 0, 131076, 1073741828, 0, 131077, 1073741824, 0, 131084, 1610612737, 0, 131085, 1073741830, 0, 131086, 1073741831, 0, 131087, 1073741830, 0, 131123, 6, 0, 262143, -1610612732, 0, 196659, 6, 0, 327679, -1610612732, 0, 262195, 6, 0, 393215, 11, 0, 327680, 4, 0, 327681, 6, 0, 327682, 4, 0, 327683, 5, 0, 327684, 7, 0, 327685, 4, 0, 327686, 4, 0, 327687, 6, 0, 327688, 4, 0, 327689, 7, 0, 327690, 4, 0, 327691, 7, 0, 327692, 4, 0, 327693, 5, 0, 327694, 4, 0, 327695, 4, 0, 327731, 6, 0, 393231, 6, 0, 393267, 6, 0, 458767, 6, 0, 458803, 6, 0, 524303, 6, 0, 524339, 6, 0, 589839, 6, 0, 589875, 6, 0, 655375, 6, 0, 655411, 6, 0, 720911, 6, 0, 720947, 6, 0, 786447, 6, 0, 786483, 6, 0, 851983, 6, 0, 851984, 6, 0, 851985, 6, 0, 851986, 6, 0, 851987, 6, 0, 851988, 6, 0, 851989, 6, 0, 851990, 6, 0, 851991, 6, 0, 851992, 6, 0, 851993, 6, 0, 851994, 6, 0, 851995, 6, 0, 851996, 6, 0, 851997, 6, 0, 851998, 6, 0, 851999, 6, 0, 852000, 6, 0, 852001, 6, 0, 852002, 6, 0, 852003, 6, 0, 852004, 6, 0, 852005, 6, 0, 852006, 6, 0, 852007, 6, 0, 852008, 6, 0, 852009, 6, 0, 852010, 6, 0, 852015, 6, 0, 852016, 6, 0, 852017, 6, 0, 852018, 6, 0, 852019, 6, 0 )
 _sections_unfolded = [ "Cell", "Transform" ]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." index="1"]
@@ -46,16 +46,136 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="cores" type="Node2D" parent="." index="2"]
 
-editor/display_folded = true
-
 [node name="core" parent="cores" index="0" instance=ExtResource( 3 )]
 
 position = Vector2( 730, 360 )
+core_number = 1
+
+[node name="core2" parent="cores" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 2390, 1000 )
+core_name = "shooter"
+help_text = "1,2,3 to pick a tower. Right click to place."
+core_number = 2
 
 [node name="spawners" type="Node2D" parent="." index="3"]
 
 [node name="spawner" parent="spawners" index="0" instance=ExtResource( 4 )]
 
-position = Vector2( 1140, 400 )
+position = Vector2( 3330, 1040 )
+
+[node name="help text" type="Node2D" parent="." index="4"]
+
+[node name="first core" type="VBoxContainer" parent="help text" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 630.0
+margin_top = 145.0
+margin_right = 836.0
+margin_bottom = 185.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+
+[node name="Label" type="Label" parent="help text/first core" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 206.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "Stand near a core to charge it."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="Label2" type="Label" parent="help text/first core" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 18.0
+margin_right = 206.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "Charged cores give you abilities."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="wasd hint" type="Label" parent="help text" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -150.0
+margin_top = 335.0
+margin_right = 56.0
+margin_bottom = 349.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "WASD to move"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="core charge level hint" type="Label" parent="help text" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 155.0
+margin_top = 555.0
+margin_right = 486.0
+margin_bottom = 569.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "Monitor charge levels on the left side of the screen."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
 
 

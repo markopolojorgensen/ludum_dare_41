@@ -18,13 +18,13 @@
 [ext_resource path="res://diagetics/player/weapon.gd" type="Script" id=16]
 [ext_resource path="res://diagetics/player/tower_placer.gd" type="Script" id=17]
 
-[sub_resource type="CapsuleShape2D" id=2]
+[sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 15.0
 height = 20.0
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
@@ -69,13 +69,13 @@ _sections_unfolded = [ "Collision", "Linear" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
 position = Vector2( 0, 10 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="sprite" type="AnimatedSprite" parent="." index="1"]
 
 scale = Vector2( 5, 5 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "idle"
 _sections_unfolded = [ "Transform" ]
 

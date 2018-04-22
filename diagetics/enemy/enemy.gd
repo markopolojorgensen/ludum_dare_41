@@ -1,13 +1,13 @@
 extends RigidBody2D
 
 var max_time = 6
-# 2 shots and im die
-var health = 2
+var health = 5
 
 func _ready():
 	var new_z_index = (randi() % 5) - 2
 	set_z_index(new_z_index)
 	$sprite.play("walk")
+	global.enemy_count += 1
 
 func _physics_process(delta):
 	$movement.do_movement(self, delta)
@@ -33,6 +33,7 @@ func die():
 	$death_timer.start()
 	yield($death_timer, "timeout")
 	queue_free()
+	global.enemy_count -= 1
 
 func is_enemy():
 	return true
@@ -42,4 +43,7 @@ func slow(amount):
 
 func unslow(amount):
 	$movement.unslow(amount)
+
+func is_alive():
+	return health > 0
 

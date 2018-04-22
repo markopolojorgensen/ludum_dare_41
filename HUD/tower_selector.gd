@@ -1,19 +1,24 @@
 extends CenterContainer
 
+var enabled = false
+
 func _ready():
+	disable()
 	unfocused()
 	connect("focus_entered", self, "focused")
 	connect("focus_exited", self, "unfocused")
 
 func enable():
-	$VBoxContainer/cc/symbol.show()
+	enabled = true
+	show()
 
 func disable():
-	$VBoxContainer/cc/symbol.hide()
-	$VBoxContainer/cc/reticle.hide()
+	enabled = false
+	hide()
 
 func focused():
-	$VBoxContainer/cc/reticle.show()
+	if enabled:
+		$VBoxContainer/cc/reticle.show()
 
 func unfocused():
 	$VBoxContainer/cc/reticle.hide()

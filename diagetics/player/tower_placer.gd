@@ -3,7 +3,6 @@ extends Node2D
 var enabled = false
 
 var max_tower_count = 3
-
 var current_tower_type
 
 var tower_scenes = {
@@ -18,15 +17,25 @@ var tower_lists = {
 	global.TOWER_TYPE.AMP: [],
 }
 
+var tower_access = {
+	global.TOWER_TYPE.SHOOTER: false,
+	global.TOWER_TYPE.AOE_SLOW: false,
+	global.TOWER_TYPE.AMP: false,
+}
+
 func _ready():
-	enabled = true #LUL
 	add_to_group("tower_selection_listeners")
+	add_to_group("tower_access")
 
 func _unhandled_input(event):
 	if enabled and event.is_action_pressed("place_tower"):
 		place_tower()
 
 func place_tower():
+	if not tower_access[current_tower_type]:
+		# maybe play a meepmerp
+		return
+	
 	var inst = tower_scenes[current_tower_type].instance()
 	inst.set_global_position(get_global_mouse_position())
 	get_parent().get_parent().add_child(inst)
@@ -34,7 +43,6 @@ func place_tower():
 	tower_lists[current_tower_type].append(inst)
 	if tower_lists[current_tower_type].size() > max_tower_count:
 		tower_lists[current_tower_type].pop_front().queue_free()
-	
 
 func enable():
 	enabled = true
@@ -44,3 +52,23 @@ func disable():
 
 func tower_selected(type):
 	current_tower_type = type
+
+func tower_access_granted(tower_type):
+	tower_access[tower_type] = true
+	enable()
+
+func tower_access_revoked(tower_type):
+	# delete revoked towers
+	for tower in tower_lists[tower_type]:
+		tower.queue_free()
+	tower_lists[tower_type].clear()
+	
+	# decide whether to disable or not
+	for access in tower_access.values():
+		if access == true:
+			return
+	
+	# all false
+	disable()
+
+
