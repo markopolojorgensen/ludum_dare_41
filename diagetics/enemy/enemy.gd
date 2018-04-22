@@ -40,9 +40,11 @@ func is_enemy():
 
 func slow(amount):
 	$movement.slow(amount)
+	$slow_visual_effect.emitting = true
 
 func unslow(amount):
 	$movement.unslow(amount)
+	$slow_visual_effect.emitting = false
 
 func is_alive():
 	return health > 0

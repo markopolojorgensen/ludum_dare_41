@@ -1,14 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://diagetics/tower/tower.gd" type="Script" id=1]
-[ext_resource path="res://diagetics/tower/towers_center.png" type="Texture" id=2]
-[ext_resource path="res://diagetics/tower/towers_shooter.png" type="Texture" id=3]
-[ext_resource path="res://diagetics/tower/shooter_behavior.gd" type="Script" id=4]
+[ext_resource path="res://diagetics/fx/amp_visual_effect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://diagetics/tower/towers_center.png" type="Texture" id=3]
+[ext_resource path="res://diagetics/tower/towers_shooter.png" type="Texture" id=4]
+[ext_resource path="res://diagetics/tower/shooter_behavior.gd" type="Script" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -36,20 +37,22 @@ bounce = 0.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
 
-[node name="center_sprite" type="Sprite" parent="." index="0"]
+[node name="amp_visual_effect" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="center_sprite" type="Sprite" parent="." index="1"]
 
 scale = Vector2( 5, 5 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="sprite" type="AnimatedSprite" parent="." index="1"]
+[node name="sprite" type="AnimatedSprite" parent="." index="2"]
 
 scale = Vector2( 5, 5 )
 frames = SubResource( 1 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 
-[node name="zone" type="Area2D" parent="." index="2"]
+[node name="zone" type="Area2D" parent="." index="3"]
 
 visible = false
 input_pickable = true
@@ -67,9 +70,9 @@ _sections_unfolded = [ "Collision" ]
 
 shape = SubResource( 2 )
 
-[node name="behavior" type="Node2D" parent="." index="3"]
+[node name="behavior" type="Node2D" parent="." index="4"]
 
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 
 [node name="firing_interval" type="Timer" parent="behavior" index="0"]
 
@@ -78,7 +81,7 @@ wait_time = 1.2
 one_shot = false
 autostart = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="5"]
 
 visible = false
 shape = SubResource( 3 )

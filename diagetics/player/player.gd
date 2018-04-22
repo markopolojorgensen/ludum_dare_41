@@ -32,9 +32,11 @@ func is_shooting():
 
 func get_amped():
 	$weapon.get_amped()
+	$amp_visual_effect.emitting = true
 
 func get_un_amped():
 	$weapon.get_un_amped()
+	$amp_visual_effect.emitting = false
 
 func speed_up():
 	$movement.speed_up()

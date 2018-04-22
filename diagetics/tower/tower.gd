@@ -9,7 +9,9 @@ func get_zone():
 func get_amped():
 	if $behavior.has_method("get_amped"):
 		$behavior.get_amped()
+		$amp_visual_effect.emitting = true
 
 func get_un_amped():
 	if $behavior.has_method("get_un_amped"):
 		$behavior.get_un_amped()
+		$amp_visual_effect.emitting = false

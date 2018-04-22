@@ -1,46 +1,47 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://diagetics/enemy/enemy.gd" type="Script" id=1]
-[ext_resource path="res://diagetics/enemy/enemy_death_1.png" type="Texture" id=2]
-[ext_resource path="res://diagetics/enemy/enemy_death_2.png" type="Texture" id=3]
-[ext_resource path="res://diagetics/enemy/enemy_death_3.png" type="Texture" id=4]
-[ext_resource path="res://diagetics/enemy/enemy_death_4.png" type="Texture" id=5]
-[ext_resource path="res://diagetics/enemy/enemy_death_5.png" type="Texture" id=6]
-[ext_resource path="res://diagetics/enemy/enemy_death_6.png" type="Texture" id=7]
-[ext_resource path="res://diagetics/enemy/enemy_death_7.png" type="Texture" id=8]
-[ext_resource path="res://diagetics/enemy/enemy_death_8.png" type="Texture" id=9]
-[ext_resource path="res://diagetics/enemy/enemy_death_9.png" type="Texture" id=10]
-[ext_resource path="res://diagetics/enemy/enemy_death_10.png" type="Texture" id=11]
-[ext_resource path="res://diagetics/enemy/enemy_death_11.png" type="Texture" id=12]
-[ext_resource path="res://diagetics/enemy/enemy_death_12.png" type="Texture" id=13]
-[ext_resource path="res://diagetics/enemy/enemy_death_13.png" type="Texture" id=14]
-[ext_resource path="res://diagetics/enemy/enemy_death_14.png" type="Texture" id=15]
-[ext_resource path="res://diagetics/enemy/enemy_death_15.png" type="Texture" id=16]
-[ext_resource path="res://diagetics/enemy/enemy_death_16.png" type="Texture" id=17]
-[ext_resource path="res://diagetics/enemy/enemy_death_17.png" type="Texture" id=18]
-[ext_resource path="res://diagetics/enemy/enemy_death_18.png" type="Texture" id=19]
-[ext_resource path="res://diagetics/enemy/enemy_walk_1.png" type="Texture" id=20]
-[ext_resource path="res://diagetics/enemy/enemy_walk_2.png" type="Texture" id=21]
-[ext_resource path="res://diagetics/enemy/enemy_walk_3.png" type="Texture" id=22]
-[ext_resource path="res://diagetics/enemy/enemy_walk_4.png" type="Texture" id=23]
-[ext_resource path="res://diagetics/enemy/enemy_walk_5.png" type="Texture" id=24]
-[ext_resource path="res://diagetics/enemy/enemy_walk_6.png" type="Texture" id=25]
-[ext_resource path="res://diagetics/enemy/movement.gd" type="Script" id=26]
+[ext_resource path="res://diagetics/fx/slow_visual_effect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://diagetics/enemy/enemy_death_1.png" type="Texture" id=3]
+[ext_resource path="res://diagetics/enemy/enemy_death_2.png" type="Texture" id=4]
+[ext_resource path="res://diagetics/enemy/enemy_death_3.png" type="Texture" id=5]
+[ext_resource path="res://diagetics/enemy/enemy_death_4.png" type="Texture" id=6]
+[ext_resource path="res://diagetics/enemy/enemy_death_5.png" type="Texture" id=7]
+[ext_resource path="res://diagetics/enemy/enemy_death_6.png" type="Texture" id=8]
+[ext_resource path="res://diagetics/enemy/enemy_death_7.png" type="Texture" id=9]
+[ext_resource path="res://diagetics/enemy/enemy_death_8.png" type="Texture" id=10]
+[ext_resource path="res://diagetics/enemy/enemy_death_9.png" type="Texture" id=11]
+[ext_resource path="res://diagetics/enemy/enemy_death_10.png" type="Texture" id=12]
+[ext_resource path="res://diagetics/enemy/enemy_death_11.png" type="Texture" id=13]
+[ext_resource path="res://diagetics/enemy/enemy_death_12.png" type="Texture" id=14]
+[ext_resource path="res://diagetics/enemy/enemy_death_13.png" type="Texture" id=15]
+[ext_resource path="res://diagetics/enemy/enemy_death_14.png" type="Texture" id=16]
+[ext_resource path="res://diagetics/enemy/enemy_death_15.png" type="Texture" id=17]
+[ext_resource path="res://diagetics/enemy/enemy_death_16.png" type="Texture" id=18]
+[ext_resource path="res://diagetics/enemy/enemy_death_17.png" type="Texture" id=19]
+[ext_resource path="res://diagetics/enemy/enemy_death_18.png" type="Texture" id=20]
+[ext_resource path="res://diagetics/enemy/enemy_walk_1.png" type="Texture" id=21]
+[ext_resource path="res://diagetics/enemy/enemy_walk_2.png" type="Texture" id=22]
+[ext_resource path="res://diagetics/enemy/enemy_walk_3.png" type="Texture" id=23]
+[ext_resource path="res://diagetics/enemy/enemy_walk_4.png" type="Texture" id=24]
+[ext_resource path="res://diagetics/enemy/enemy_walk_5.png" type="Texture" id=25]
+[ext_resource path="res://diagetics/enemy/enemy_walk_6.png" type="Texture" id=26]
+[ext_resource path="res://diagetics/enemy/movement.gd" type="Script" id=27]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "channel",
 "speed": 20.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
 "loop": false,
 "name": "death",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "walk",
 "speed": 10.0
@@ -52,7 +53,7 @@ custom_solver_bias = 0.0
 radius = 18.0
 height = 15.0
 
-[node name="enemy" type="RigidBody2D"]
+[node name="enemy" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 4
@@ -75,7 +76,11 @@ angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
 
-[node name="sprite" type="AnimatedSprite" parent="." index="0"]
+[node name="slow_visual_effect" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 0, -27 )
+
+[node name="sprite" type="AnimatedSprite" parent="." index="1"]
 
 position = Vector2( 0, -40 )
 scale = Vector2( 5, 5 )
@@ -83,23 +88,23 @@ frames = SubResource( 1 )
 animation = "walk"
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
 
 position = Vector2( 0, -26 )
 shape = SubResource( 2 )
 
-[node name="movement" type="Node2D" parent="." index="2"]
+[node name="movement" type="Node2D" parent="." index="3"]
 
-script = ExtResource( 26 )
+script = ExtResource( 27 )
 
-[node name="wander_timer" type="Timer" parent="." index="3"]
+[node name="wander_timer" type="Timer" parent="." index="4"]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
 
-[node name="death_timer" type="Timer" parent="." index="4"]
+[node name="death_timer" type="Timer" parent="." index="5"]
 
 process_mode = 1
 wait_time = 0.6

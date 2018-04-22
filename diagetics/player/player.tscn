@@ -1,22 +1,23 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://diagetics/player/player.gd" type="Script" id=1]
-[ext_resource path="res://diagetics/player/player_move_left_1.png" type="Texture" id=2]
-[ext_resource path="res://diagetics/player/player_move_left_2.png" type="Texture" id=3]
-[ext_resource path="res://diagetics/player/player_move_left_3.png" type="Texture" id=4]
-[ext_resource path="res://diagetics/player/player_move_left_4.png" type="Texture" id=5]
-[ext_resource path="res://diagetics/player/player_move_right_1.png" type="Texture" id=6]
-[ext_resource path="res://diagetics/player/player_move_right_2.png" type="Texture" id=7]
-[ext_resource path="res://diagetics/player/player_move_right_3.png" type="Texture" id=8]
-[ext_resource path="res://diagetics/player/player_move_right_4.png" type="Texture" id=9]
-[ext_resource path="res://diagetics/player/player_idle_1.png" type="Texture" id=10]
-[ext_resource path="res://diagetics/player/player_idle_2.png" type="Texture" id=11]
-[ext_resource path="res://diagetics/player/player_idle_3.png" type="Texture" id=12]
-[ext_resource path="res://diagetics/player/player_idle_4.png" type="Texture" id=13]
-[ext_resource path="res://diagetics/player/movement.gd" type="Script" id=14]
-[ext_resource path="res://diagetics/player/jump.gd" type="Script" id=15]
-[ext_resource path="res://diagetics/player/weapon.gd" type="Script" id=16]
-[ext_resource path="res://diagetics/player/tower_placer.gd" type="Script" id=17]
+[ext_resource path="res://diagetics/fx/amp_visual_effect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://diagetics/player/player_move_left_1.png" type="Texture" id=3]
+[ext_resource path="res://diagetics/player/player_move_left_2.png" type="Texture" id=4]
+[ext_resource path="res://diagetics/player/player_move_left_3.png" type="Texture" id=5]
+[ext_resource path="res://diagetics/player/player_move_left_4.png" type="Texture" id=6]
+[ext_resource path="res://diagetics/player/player_move_right_1.png" type="Texture" id=7]
+[ext_resource path="res://diagetics/player/player_move_right_2.png" type="Texture" id=8]
+[ext_resource path="res://diagetics/player/player_move_right_3.png" type="Texture" id=9]
+[ext_resource path="res://diagetics/player/player_move_right_4.png" type="Texture" id=10]
+[ext_resource path="res://diagetics/player/player_idle_1.png" type="Texture" id=11]
+[ext_resource path="res://diagetics/player/player_idle_2.png" type="Texture" id=12]
+[ext_resource path="res://diagetics/player/player_idle_3.png" type="Texture" id=13]
+[ext_resource path="res://diagetics/player/player_idle_4.png" type="Texture" id=14]
+[ext_resource path="res://diagetics/player/movement.gd" type="Script" id=15]
+[ext_resource path="res://diagetics/player/jump.gd" type="Script" id=16]
+[ext_resource path="res://diagetics/player/weapon.gd" type="Script" id=17]
+[ext_resource path="res://diagetics/player/tower_placer.gd" type="Script" id=18]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -27,23 +28,23 @@ height = 20.0
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "left",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "right",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "idle",
 "speed": 12.0
 } ]
 
-[node name="player" type="RigidBody2D"]
+[node name="player" type="RigidBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 2
@@ -72,14 +73,16 @@ position = Vector2( 0, 10 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="sprite" type="AnimatedSprite" parent="." index="1"]
+[node name="amp_visual_effect" parent="." index="1" instance=ExtResource( 2 )]
+
+[node name="sprite" type="AnimatedSprite" parent="." index="2"]
 
 scale = Vector2( 5, 5 )
 frames = SubResource( 2 )
 animation = "idle"
 _sections_unfolded = [ "Transform" ]
 
-[node name="Camera2D" type="Camera2D" parent="." index="2"]
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
 
 anchor_mode = 1
 rotating = false
@@ -105,17 +108,17 @@ editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Drag Margin", "Smoothing" ]
 
-[node name="movement" type="Node2D" parent="." index="3"]
-
-script = ExtResource( 14 )
-
-[node name="jump" type="Node2D" parent="." index="4"]
+[node name="movement" type="Node2D" parent="." index="4"]
 
 script = ExtResource( 15 )
 
-[node name="weapon" type="Node2D" parent="." index="5"]
+[node name="jump" type="Node2D" parent="." index="5"]
 
 script = ExtResource( 16 )
+
+[node name="weapon" type="Node2D" parent="." index="6"]
+
+script = ExtResource( 17 )
 body_path = NodePath("..")
 
 [node name="firing_interval" type="Timer" parent="weapon" index="0"]
@@ -125,8 +128,8 @@ wait_time = 0.15
 one_shot = false
 autostart = false
 
-[node name="tower_placer" type="Node2D" parent="." index="6"]
+[node name="tower_placer" type="Node2D" parent="." index="7"]
 
-script = ExtResource( 17 )
+script = ExtResource( 18 )
 
 

@@ -1,6 +1,5 @@
 TODO
   code like a madman
-  aoe blast
   amp particle effect
   slow particle effect
   music
