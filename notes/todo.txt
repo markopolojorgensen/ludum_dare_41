@@ -1,7 +1,9 @@
 TODO
-  code like a madman
+  code like amadman
+  amp particle effect
   enemies fade in on spawn
   towers spin
+  cooler font
   increase core shields by shooting at it
   player dash animation
   custom enemy reclaim core animation
@@ -9,6 +11,7 @@ TODO
   itch.io theme
   itch.io make page public
   update all the links
+  change enemy framerate based on slow aoe effects
 
 
 art

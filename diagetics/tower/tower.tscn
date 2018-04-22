@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://diagetics/tower/tower.gd" type="Script" id=1]
 [ext_resource path="res://diagetics/tower/towers_center.png" type="Texture" id=2]
@@ -19,9 +19,22 @@ animations = [ {
 custom_solver_bias = 0.0
 radius = 500.0
 
-[node name="tower" type="Node2D" index="0"]
+[sub_resource type="RectangleShape2D" id=3]
 
+custom_solver_bias = 0.0
+extents = Vector2( 5, 5 )
+
+[node name="tower" type="StaticBody2D"]
+
+input_pickable = false
+collision_layer = 8
+collision_mask = 0
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
 script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
 
 [node name="center_sprite" type="Sprite" parent="." index="0"]
 
@@ -44,7 +57,7 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-collision_layer = 8
+collision_layer = 0
 collision_mask = 4
 audio_bus_override = false
 audio_bus_name = "Master"
@@ -64,5 +77,10 @@ process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="4"]
+
+visible = false
+shape = SubResource( 3 )
 
 

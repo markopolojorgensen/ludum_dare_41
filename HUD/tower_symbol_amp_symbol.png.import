@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/towers_aoe_slow_symbol.png-1309be5136e6d22cf1b58e0bab71cfe6.stex"
+path="res://.import/tower_symbol_amp_symbol.png-785446cedd35fcdc87c06dad1da99edf.stex"
 
 [deps]
 
-source_file="res://diagetics/tower/towers_aoe_slow_symbol.png"
-source_md5="4b303871b987ffd7bd47cd24435b6d1d"
+source_file="res://HUD/tower_symbol_amp_symbol.png"
+source_md5="9dc4eb8c465b0f8b3313e016fc19e927"
 
-dest_files=[ "res://.import/towers_aoe_slow_symbol.png-1309be5136e6d22cf1b58e0bab71cfe6.stex" ]
-dest_md5="5e25d196d2e87ee8235d63c8b33af5ee"
+dest_files=[ "res://.import/tower_symbol_amp_symbol.png-785446cedd35fcdc87c06dad1da99edf.stex" ]
+dest_md5="4feec7d4cf703fcab2ce3fce7869bd3e"
 
 [params]
 

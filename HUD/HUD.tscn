@@ -1,0 +1,87 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://HUD/HUD.gd" type="Script" id=1]
+[ext_resource path="res://HUD/tower_selector.tscn" type="PackedScene" id=2]
+[ext_resource path="res://HUD/tower_selector_aoe_slow.tscn" type="PackedScene" id=3]
+[ext_resource path="res://HUD/tower_selector_amp.tscn" type="PackedScene" id=4]
+
+[node name="HUD" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="m_con" type="MarginContainer" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/margin_right = 15
+custom_constants/margin_top = 15
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 15
+_sections_unfolded = [ "Focus", "Mouse" ]
+
+[node name="vbox_con" type="VBoxContainer" parent="m_con" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 1009.0
+margin_bottom = 585.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Focus", "Mouse" ]
+
+[node name="tower_selectors" type="HBoxContainer" parent="m_con/vbox_con" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 994.0
+margin_bottom = 98.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Focus", "Mouse" ]
+
+[node name="tower_selector_shooter" parent="m_con/vbox_con/tower_selectors" index="0" instance=ExtResource( 2 )]
+
+margin_bottom = 98.0
+
+[node name="tower_selector_aoe_slow" parent="m_con/vbox_con/tower_selectors" index="1" instance=ExtResource( 3 )]
+
+margin_left = 84.0
+margin_right = 164.0
+margin_bottom = 98.0
+
+[node name="tower_selector_amp" parent="m_con/vbox_con/tower_selectors" index="2" instance=ExtResource( 4 )]
+
+margin_left = 168.0
+margin_right = 248.0
+margin_bottom = 98.0
+
+

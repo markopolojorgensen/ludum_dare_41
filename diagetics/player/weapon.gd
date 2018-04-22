@@ -3,6 +3,8 @@ extends Node2D
 export(NodePath) var body_path
 onready var body = get_node(body_path)
 
+var amp_level = 0
+
 var bullet_scene = preload("res://diagetics/bullet/bullet.tscn")
 
 var enabled = false
@@ -36,3 +38,22 @@ func disable():
 
 func is_shooting():
 	return not $firing_interval.is_stopped()
+
+func get_amped():
+	amp_level += 1
+	update_amp_speed()
+
+func get_un_amped():
+	amp_level -= 1
+	update_amp_speed()
+
+func update_amp_speed():
+	var firing_bonus = 1 * pow(0.80, amp_level)
+	# print(firing_bonus)
+	$firing_interval.set_wait_time(0.15 * firing_bonus)
+
+
+
+
+
+

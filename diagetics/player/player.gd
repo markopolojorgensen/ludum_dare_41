@@ -23,3 +23,9 @@ func disable_shooting():
 
 func is_shooting():
 	return $weapon.is_shooting()
+
+func get_amped():
+	$weapon.get_amped()
+
+func get_un_amped():
+	$weapon.get_un_amped()

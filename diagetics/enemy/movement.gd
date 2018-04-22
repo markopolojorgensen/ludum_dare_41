@@ -34,11 +34,11 @@ func stop():
 	is_left = false
 	is_right = false
 
-func slow():
-	slowed_amount += 1
+func slow(amount):
+	slowed_amount += amount
 	max_speed = default_max_speed - (slowed_amount * 20)
 
-func unslow():
-	slowed_amount -= 1
+func unslow(amount):
+	slowed_amount -= amount
 	max_speed = default_max_speed - (slowed_amount * 20)
 

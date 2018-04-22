@@ -115,7 +115,6 @@ script = ExtResource( 15 )
 
 [node name="weapon" type="Node2D" parent="." index="5"]
 
-editor/display_folded = true
 script = ExtResource( 16 )
 body_path = NodePath("..")
 

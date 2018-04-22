@@ -3,7 +3,7 @@
 [ext_resource path="res://diagetics/spawner/spawner.gd" type="Script" id=1]
 [ext_resource path="res://diagetics/spawner/spawner.png" type="Texture" id=2]
 
-[node name="spawner" type="Node2D"]
+[node name="spawner" type="Node2D" index="0"]
 
 z_index = -5
 script = ExtResource( 1 )

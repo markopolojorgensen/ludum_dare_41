@@ -9,10 +9,10 @@ var is_up
 var is_down
 
 func do_movement(body, state):
-	is_left = Input.is_action_pressed("ui_left")
-	is_right = Input.is_action_pressed("ui_right")
-	is_up = Input.is_action_pressed("ui_up")
-	is_down = Input.is_action_pressed("ui_down")
+	is_left = Input.is_action_pressed("move_left")
+	is_right = Input.is_action_pressed("move_right")
+	is_up = Input.is_action_pressed("move_up")
+	is_down = Input.is_action_pressed("move_down")
 	
 	# movement
 	if is_right:

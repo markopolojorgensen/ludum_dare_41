@@ -11,7 +11,5 @@ func core_activated(core_name):
 	if core_name == "weapon":
 		$player.enable_shooting()
 	
-	
-	
 
 
