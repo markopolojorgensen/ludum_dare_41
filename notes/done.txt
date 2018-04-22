@@ -1,4 +1,6 @@
 DONE
+  dynamic max tower count
+  revoking access destroys towers
   core shield health widget
   if enemies die in core zone, they need to stop depleting core shield
   enemies should randomize z level around player for depth effect

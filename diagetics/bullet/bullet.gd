@@ -1,12 +1,14 @@
 extends Node2D
 
+var damage = 1
+
 func _ready():
 	$area.connect("body_entered", self, "collision")
 	$sprite.play("spawn")
 
 func collision(body):
 	if body.has_method("is_enemy") and body.is_enemy():
-		body.hit_by_bullet()
+		body.hit_by_bullet(damage)
 	
 	# don't collide with multiple enemies
 	$area/CollisionShape2D.set_disabled(true)

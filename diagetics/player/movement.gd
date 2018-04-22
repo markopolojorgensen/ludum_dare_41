@@ -33,9 +33,21 @@ func do_movement(body, state):
 	# natural slowdown
 	var no_input_pressed = not (is_left or is_right)
 	var is_shooting = get_parent().is_shooting()
-	if no_input_pressed and not is_shooting:
+	if no_input_pressed:
 		var horiz_vector = Vector2(1, 0)
-		var slow_down_impulse = -0.4 * lin_vel.dot(horiz_vector) * horiz_vector
+		var slow_down_impulse = -1 * lin_vel.dot(horiz_vector) * horiz_vector
+		if not is_shooting:
+			slow_down_impulse *= 0.4
+		else:
+			slow_down_impulse *= 0.1
 		body.apply_impulse(Vector2(), slow_down_impulse)
+
+func speed_up():
+	max_speed += 200
+
+func slow_down():
+	max_speed -= 200
+
+
 
 

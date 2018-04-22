@@ -8,6 +8,8 @@
 z_index = -5
 script = ExtResource( 1 )
 _sections_unfolded = [ "Z Index" ]
+flip = false
+spawn_rate = 2.2
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 

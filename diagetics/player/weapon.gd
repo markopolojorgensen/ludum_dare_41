@@ -27,8 +27,9 @@ func fire_ze_missile():
 	var inst = bullet_scene.instance()
 	inst.set_global_position(get_global_position())
 	get_parent().get_parent().add_child(inst)
+	inst.damage = 3
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)
-	body.apply_impulse(Vector2(), -direction.normalized() * bullet_impulse * 0.3)
+	body.apply_impulse(Vector2(), -direction.normalized() * bullet_impulse * 0.5)
 
 func enable():
 	enabled = true

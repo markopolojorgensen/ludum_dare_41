@@ -20,9 +20,9 @@ func wander():
 	if health > 0:
 		$sprite.play("channel")
 
-func hit_by_bullet():
+func hit_by_bullet(damage):
 	# TODO indication of damage
-	health -= 1
+	health -= damage
 	if health <= 0:
 		die()
 
@@ -46,4 +46,10 @@ func unslow(amount):
 
 func is_alive():
 	return health > 0
+
+func flip():
+	$sprite.set_flip_h(true)
+	$movement.is_left = false
+	$movement.is_right = true
+
 

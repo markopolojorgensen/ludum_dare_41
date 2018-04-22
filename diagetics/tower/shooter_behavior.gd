@@ -53,7 +53,7 @@ func shoot_at_target():
 	inst.apply_impulse(Vector2(), direction.normalized() * bullet_impulse)
 
 func get_amped():
-	print("shooter tower got amped")
+	# print("shooter tower got amped")
 	amp_level += 1
 	update_amp_speed()
 

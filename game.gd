@@ -12,6 +12,12 @@ func core_activated(core_name):
 		$player.enable_shooting()
 	elif core_name == "shooter":
 		get_tree().call_group("tower_access", "tower_access_granted", global.TOWER_TYPE.SHOOTER)
+	elif core_name == "speed":
+		$player.speed_up()
+	elif core_name == "amp":
+		get_tree().call_group("tower_access", "tower_access_granted", global.TOWER_TYPE.AMP)
+	elif core_name == "aoe_slow":
+		get_tree().call_group("tower_access", "tower_access_granted", global.TOWER_TYPE.AOE_SLOW)
 	else:
 		print("new core: " + str(core_name))
 	
@@ -21,6 +27,12 @@ func core_deactivated(core_name):
 		$player.disable_shooting()
 	elif core_name == "shooter":
 		get_tree().call_group("tower_access", "tower_access_revoked", global.TOWER_TYPE.SHOOTER)
+	elif core_name == "speed":
+		$player.slow_down()
+	elif core_name == "amp":
+		get_tree().call_group("tower_access", "tower_access_revoked", global.TOWER_TYPE.AMP)
+	elif core_name == "aoe_slow":
+		get_tree().call_group("tower_access", "tower_access_revoked", global.TOWER_TYPE.AOE_SLOW)
 	else:
 		print("new core: " + str(core_name))
 	

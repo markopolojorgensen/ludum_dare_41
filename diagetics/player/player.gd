@@ -29,3 +29,12 @@ func get_amped():
 
 func get_un_amped():
 	$weapon.get_un_amped()
+
+func speed_up():
+	$movement.speed_up()
+
+func slow_down():
+	$movement.slow_down()
+
+
+

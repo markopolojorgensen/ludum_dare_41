@@ -15,12 +15,12 @@
 [ext_resource path="res://diagetics/bullet/bullet_spawn_2.png" type="Texture" id=13]
 [ext_resource path="res://diagetics/bullet/bullet_spawn_3.png" type="Texture" id=14]
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 10.0
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
@@ -34,12 +34,12 @@ animations = [ {
 "speed": 20.0
 } ]
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=3]
 
 custom_solver_bias = 0.0
 radius = 14.0
 
-[node name="bullet" type="RigidBody2D" index="0"]
+[node name="bullet" type="RigidBody2D"]
 
 z_index = 5
 input_pickable = false
@@ -66,13 +66,13 @@ _sections_unfolded = [ "Z Index" ]
 [node name="secret not really there body" type="CollisionShape2D" parent="." index="0"]
 
 visible = false
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 disabled = true
 
 [node name="sprite" type="AnimatedSprite" parent="." index="1"]
 
 scale = Vector2( 5, 5 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "spawn"
 _sections_unfolded = [ "Transform" ]
 
@@ -91,7 +91,7 @@ _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area" index="0"]
 
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="pop_timer" type="Timer" parent="." index="3"]
 
