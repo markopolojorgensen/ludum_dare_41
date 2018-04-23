@@ -1,4 +1,4 @@
-# Project Title TBD :D
+# Crux Swarm
 
 This is a submission for [Ludum Dare 41](https://ldjam.com/events/ludum-dare/41/crux-swarm).
 
