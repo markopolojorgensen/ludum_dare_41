@@ -1,4 +1,7 @@
 DONE
+  description
+  itch.io make page public
+  itch.io theme
   BUTTON
   logo intro
   music

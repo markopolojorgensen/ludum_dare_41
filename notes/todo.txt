@@ -9,12 +9,10 @@ TODO
   increase core shields by shooting at it
   custom enemy reclaim core animation
   player dash animation
+  change enemy framerate based on slow aoe effects
 
   (release)
-  itch.io theme
-  itch.io make page public
   update all the links
-  change enemy framerate based on slow aoe effects
 
 
 
@@ -129,8 +127,8 @@ Tower defense Platformer
 
 Links (from everything to everything else)
   spiel
-    This is a submission for [Ludum Dare 41]().
-    Download the game on [itch.io]()!
+    This is a submission for [Ludum Dare 41](https://ldjam.com/events/ludum-dare/41/crux-swarm).
+    Download the game on [itch.io](https://markopolodev.itch.io/crux-swarm)!
     Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_41).
     I'm on [Twitter](https://twitter.com/markopolodev).
     I'm on [Twitch](https://www.twitch.tv/markopolodev)!
