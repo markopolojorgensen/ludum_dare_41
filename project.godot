@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Ludum Dare 41"
-run/main_scene="res://game.tscn"
+run/main_scene="res://intro.tscn"
 config/icon="res://icon.png"
 
 [autoload]

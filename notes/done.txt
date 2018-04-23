@@ -1,4 +1,6 @@
 DONE
+  BUTTON
+  logo intro
   music
   code like a madman
   aoe blast  amp particle effect

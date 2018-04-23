@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://diagetics/level/tileset_level_resource.tres" type="TileSet" id=1]
 [ext_resource path="res://diagetics/level/background_solid.png" type="Texture" id=2]
 [ext_resource path="res://diagetics/core/core.tscn" type="PackedScene" id=3]
 [ext_resource path="res://diagetics/spawner/spawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://diagetics/door/door.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD/button_ (normal).png" type="Texture" id=6]
+[ext_resource path="res://HUD/button_ (pressed).png" type="Texture" id=7]
+[ext_resource path="res://HUD/button_ (hover).png" type="Texture" id=8]
+[ext_resource path="res://diagetics/level/TextureButton.gd" type="Script" id=9]
 
 [node name="level" type="Node2D" index="0"]
 
@@ -507,5 +511,32 @@ _sections_unfolded = [ "custom_colors" ]
 [node name="door" parent="." index="5" instance=ExtResource( 5 )]
 
 position = Vector2( 3680, 1075 )
+
+[node name="TextureButton" type="TextureButton" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 3945.0
+margin_top = 3585.0
+margin_right = 4125.0
+margin_bottom = 3665.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+script = ExtResource( 9 )
+_sections_unfolded = [ "Textures" ]
 
 

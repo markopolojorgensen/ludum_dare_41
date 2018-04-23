@@ -7,6 +7,7 @@ var winner = false
 func _ready():
 	add_to_group("core_listeners")
 	$win_gate.connect("body_entered", self, "win_gate_entered")
+	$fade_layer/AnimationPlayer.play("fadein")
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):

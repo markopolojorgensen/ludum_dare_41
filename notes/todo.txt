@@ -1,5 +1,4 @@
 TODO
-  logo intro
   BUTTON
   parallax background visuals
   towers spin
@@ -23,7 +22,7 @@ TODO
 sfx
   door
   bullet
-    boom
+    X boom
     X fire
     X hit
     X miss
@@ -34,10 +33,10 @@ sfx
     activation
     deactivation
   towers
-    selection
-    placing
-    amp
-    slow
+    X selection
+    X placing
+    X amp
+    X slow
     X shooting
 
 
