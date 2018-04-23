@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://diagetics/level/tileset_level_resource.tres" type="TileSet" id=1]
 [ext_resource path="res://diagetics/level/background_solid.png" type="Texture" id=2]
@@ -9,6 +9,14 @@
 [ext_resource path="res://HUD/button_ (pressed).png" type="Texture" id=7]
 [ext_resource path="res://HUD/button_ (hover).png" type="Texture" id=8]
 [ext_resource path="res://diagetics/level/TextureButton.gd" type="Script" id=9]
+[ext_resource path="res://decos/decorations_1.png" type="Texture" id=10]
+[ext_resource path="res://decos/decorations_2.png" type="Texture" id=11]
+[ext_resource path="res://decos/decorations_3.png" type="Texture" id=12]
+[ext_resource path="res://decos/decorations_4.png" type="Texture" id=13]
+[ext_resource path="res://decos/decorations_5.png" type="Texture" id=14]
+[ext_resource path="res://decos/decorations_6.png" type="Texture" id=15]
+[ext_resource path="res://decos/decorations_7.png" type="Texture" id=16]
+[ext_resource path="res://decos/decorations_8.png" type="Texture" id=17]
 
 [node name="level" type="Node2D" index="0"]
 
@@ -147,6 +155,8 @@ flip = true
 
 [node name="help text" type="Node2D" parent="." index="4"]
 
+editor/display_folded = true
+
 [node name="first core" type="VBoxContainer" parent="help text" index="0"]
 
 editor/display_folded = true
@@ -230,22 +240,46 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
 custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
-text = "WASD to move"
+text = "WASD to move."
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="rave hint" type="Label" parent="help text" index="2"]
+[node name="quit hint" type="Label" parent="help text" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 2240.0
-margin_top = 825.0
-margin_right = 2535.0
-margin_bottom = 839.0
+margin_left = -150.0
+margin_top = 355.0
+margin_right = 56.0
+margin_bottom = 369.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "Esc to quit."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="rave hint" type="Label" parent="help text" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2245.0
+margin_top = 800.0
+margin_right = 2540.0
+margin_bottom = 814.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -260,7 +294,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="goal hint" type="Label" parent="help text" index="3"]
+[node name="goal hint" type="Label" parent="help text" index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -284,7 +318,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="goal hint2" type="Label" parent="help text" index="4"]
+[node name="goal hint2" type="Label" parent="help text" index="5"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -308,7 +342,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core charge level hint" type="Label" parent="help text" index="5"]
+[node name="core charge level hint" type="Label" parent="help text" index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -332,7 +366,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_weapon_hint" type="Label" parent="help text" index="6"]
+[node name="core_weapon_hint" type="Label" parent="help text" index="7"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -357,7 +391,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_shooter_hint" type="Label" parent="help text" index="7"]
+[node name="core_shooter_hint" type="Label" parent="help text" index="8"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -382,7 +416,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_speed_hint" type="Label" parent="help text" index="8"]
+[node name="core_speed_hint" type="Label" parent="help text" index="9"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -407,7 +441,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_amp_hint" type="Label" parent="help text" index="9"]
+[node name="core_amp_hint" type="Label" parent="help text" index="10"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -432,7 +466,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_aoe_slow_hint" type="Label" parent="help text" index="10"]
+[node name="core_aoe_slow_hint" type="Label" parent="help text" index="11"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -457,7 +491,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_blast_hint" type="Label" parent="help text" index="11"]
+[node name="core_blast_hint" type="Label" parent="help text" index="12"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -482,7 +516,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core count hint" type="Label" parent="help text" index="12"]
+[node name="core count hint" type="Label" parent="help text" index="13"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -538,5 +572,99 @@ texture_pressed = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
 script = ExtResource( 9 )
 _sections_unfolded = [ "Textures" ]
+
+[node name="decos" type="Node2D" parent="." index="7"]
+
+[node name="Sprite" type="Sprite" parent="decos" index="0"]
+
+position = Vector2( 2890, 825 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite9" type="Sprite" parent="decos" index="1"]
+
+position = Vector2( 1875, 825 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 10 )
+flip_h = true
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="Sprite2" type="Sprite" parent="decos" index="2"]
+
+position = Vector2( 5600, 380 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite3" type="Sprite" parent="decos" index="3"]
+
+position = Vector2( 5910, 350 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite4" type="Sprite" parent="decos" index="4"]
+
+position = Vector2( 5940, 590 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite5" type="Sprite" parent="decos" index="5"]
+
+position = Vector2( 6255, 610 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 14 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite6" type="Sprite" parent="decos" index="6"]
+
+position = Vector2( 6535, 765 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite7" type="Sprite" parent="decos" index="7"]
+
+position = Vector2( 6770, 935 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite8" type="Sprite" parent="decos" index="8"]
+
+position = Vector2( 3670, -3460 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 16 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="8"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+
+motion_scale = Vector2( 0.8, 0.8 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
+
+position = Vector2( 1050, -1250 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Offset", "Transform" ]
 
 

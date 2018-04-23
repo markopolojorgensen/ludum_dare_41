@@ -1,5 +1,4 @@
 TODO
-  BUTTON
   parallax background visuals
   towers spin
   modulate core shield indicators when especially low

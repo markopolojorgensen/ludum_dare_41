@@ -1,7 +1,7 @@
 extends Node2D
 
 var active_cores = 0
-var required_cores = 1 # 6
+var required_cores = 6
 
 func _ready():
 	add_to_group("core_listeners")
