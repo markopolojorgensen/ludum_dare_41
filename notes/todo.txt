@@ -1,8 +1,15 @@
 TODO
+  BUG: restarting the game doesn't clear upgrades
+  towers should shoot at enemy bodies, not their feet
   parallax background visuals
+  particle effects increase as effect increases (via amp, multiple sources, etc.)
   towers spin
   modulate core shield indicators when especially low
+  audio should fade in / out (lerp?)
+  hint: The number of cores you have activated determines the number of towers you can place
+    The more cores you have activated, the more towers you can place.
 
+  fullscreen support
   enemies fade in on spawn
   cooler font
   center symbol numbers =(
@@ -10,32 +17,22 @@ TODO
   custom enemy reclaim core animation
   player dash animation
   change enemy framerate based on slow aoe effects
+  towers can only target enemies they can "see" i.e. don't shoot at enemies you can't hit
 
   (release)
   update all the links
+  soundcloud the music
 
 
 
 sfx
   door
-  bullet
-    X boom
-    X fire
-    X hit
-    X miss
   enemies
     spawn
     dance
   cores
     activation
     deactivation
-  towers
-    X selection
-    X placing
-    X amp
-    X slow
-    X shooting
-
 
 art
   level decorations
@@ -43,71 +40,30 @@ art
     tombstones?
     kelp
 
-UI elements
-  core shield UI elements
-  tower selector UI
-
-
-
-
-level
-  "desert" - dash core
-  "mountain" - shooter core
-enemies
-  move towards cores
-towers
-  shoot
-  target enemies
-platforms
-player
-  move
-  jump
-  shoot
-  dash
-bullets
-  damage enemies
-  turn into aoe damage
-doors
-  opened by core activation
-
-every core starts with a few nearby enemies
-
-Activate All Cores to Win
-Activating a Core Causes a Big Wave
-Cores are Deactivated if Enough Enemies Reach Them
-If a Core is Deactivated You Lose its Benefit
-
-
 Tower defense Platformer
   cores
     some cores are powerups
       shooting ability
       player moves faster
       player and tower weapons damage in AOE
-      x dash / boost
     some cores are tower types
       shooter
       aoe slow tower
       amplifier
-        increases shooter speed
+        increases tower shoot speed
+        increases player shoot speed
         increases slow effect
-        increases player move, shoot speed
-        increases aoe size of bullets if aoe is activated
 
     acquiring X cores unlocks shortcuts between areas?
 
   player movement destroys enemies?
   main goal: destroy enemy core
   cores unlock doors, unlock all doors to get access to enemy core
-  wave size scales with number of activated cores
+  enemy spawn rate scales with number of activated cores
   tower availability scales with number of activated cores
   all cores are sort of under attack constantly
-  core shields regenerate
-    only when player is nearby?
+  core shields regenerate when player is nearby
   there are specific places for enemies to spawn
-  there are hud elements to tell you core shield status
-  when a tower core shield fails, should the corresponding towers be destroyed?
-    yes?
 
 
 
@@ -121,7 +77,10 @@ Tower defense Platformer
 
 
 
-
+    [Ludum Dare 41](https://ldjam.com/events/ludum-dare/41/crux-swarm) page.
+    Download the game on [itch.io](https://markopolodev.itch.io/crux-swarm)!
+    Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_41).
+    Development Timelapse on [youtube](https://youtu.be/q9Y3624VRsY).
 
 
 
@@ -130,12 +89,13 @@ Links (from everything to everything else)
     This is a submission for [Ludum Dare 41](https://ldjam.com/events/ludum-dare/41/crux-swarm).
     Download the game on [itch.io](https://markopolodev.itch.io/crux-swarm)!
     Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_41).
+    Development Timelapse on [youtube](https://youtu.be/q9Y3624VRsY).
     I'm on [Twitter](https://twitter.com/markopolodev).
     I'm on [Twitch](https://www.twitch.tv/markopolodev)!
   link locations
+    Twitch
     LDJam page
     itch.io
     Github / readme
     Twitter
-    Twitch
-
+    youtube: https://youtu.be/q9Y3624VRsY

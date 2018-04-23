@@ -1,11 +1,16 @@
 DONE
+  explosion gifs
+  time lapse video
   description
   itch.io make page public
   itch.io theme
   BUTTON
   logo intro
+  bullet sfx
+  towers sfx
   music
   code like a madman
+  when a tower core shield fails, the corresponding towers are destroyed
   aoe blast  amp particle effect
   slow particle effect
   dynamic max tower count
