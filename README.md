@@ -6,18 +6,16 @@ Crux Swarm is a metroidvania tower defense game. Activate cores to gain new
 abilities. Defend the cores from enemies or you'll lose your abilities - and
 your only chance to escape.
 
-![What a lot of explosions.](https://i.imgur.com/iQtnBvR.gifv)
-
 ### Installing
 
 Download the game on [itch.io](https://markopolodev.itch.io/crux-swarm)!
 
 ### Links
 
-Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_41).
-Development Timelapse on [youtube](https://youtu.be/q9Y3624VRsY).
-I'm on [Twitter](https://twitter.com/markopolodev).
-I'm on [Twitch](https://www.twitch.tv/markopolodev)!
+* Source code on [Github](https://github.com/markopolojorgensen/ludum_dare_41).
+* Development Timelapse on [youtube](https://youtu.be/q9Y3624VRsY).
+* I'm on [Twitter](https://twitter.com/markopolodev).
+* I'm on [Twitch](https://www.twitch.tv/markopolodev)!
 
 ## Built With
 
