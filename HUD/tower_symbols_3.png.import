@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tower_symbol_reticle.png-ab5a56cf0fe5bce1769225907488b245.stex"
+path="res://.import/tower_symbols_3.png-279086c87b41f09d620c1f8f3a030820.stex"
 
 [deps]
 
-source_file="res://HUD/tower_symbol_reticle.png"
-source_md5="cc7916530dc9b31b0b8ab5755a458c76"
+source_file="res://HUD/tower_symbols_3.png"
+source_md5="6db2d3568f26bee32c505e2ed43b5ba3"
 
-dest_files=[ "res://.import/tower_symbol_reticle.png-ab5a56cf0fe5bce1769225907488b245.stex" ]
-dest_md5="92e78605fa378859b14932e1f51e171e"
+dest_files=[ "res://.import/tower_symbols_3.png-279086c87b41f09d620c1f8f3a030820.stex" ]
+dest_md5="e64db37b1cec46a1d41427d94be75801"
 
 [params]
 

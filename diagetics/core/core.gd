@@ -1,6 +1,5 @@
 extends Node2D
 
-
 export(String) var core_name = "weapon"
 export(NodePath) var help_text_label_path
 export(String) var help_text = "Left click to shoot."
@@ -14,7 +13,14 @@ var uncharge_rate = 0.1
 
 var enemies = 0
 
+var debug = false
+
 func _ready():
+	if debug:
+		# speed mode :D
+		charge_rate = 100
+		uncharge_rate = 1
+	
 	$shield.set_value(0)
 	$zone.connect("body_entered", self, "body_entered")
 	$zone.connect("body_exited", self, "body_exited")

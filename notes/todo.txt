@@ -1,6 +1,7 @@
 TODO
   bug: permaslow mystery?
 
+
   SKILL CHAINS
     define skill chains
     force player to second core?
@@ -42,7 +43,6 @@ Significant Improvements
   fullscreen support
   enemies fade in on spawn
   cooler font
-  center symbol numbers =( (i.e. fix symbol sprites)
   increase core shields by shooting at it
   custom enemy reclaim core animation
   player dash animation

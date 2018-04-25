@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tower_symbol_shooter_symbol.png-5cb4b2f54e09f03303d7d6d60242e651.stex"
+path="res://.import/tower_symbols_2.png-b7ba03ae6aa3af0d1e957558f32f9cf0.stex"
 
 [deps]
 
-source_file="res://HUD/tower_symbol_shooter_symbol.png"
-source_md5="1834cf3accd2e6026eeedd5e559a17a7"
+source_file="res://HUD/tower_symbols_2.png"
+source_md5="d24bf47d3d744be85f8e3463afadc7b1"
 
-dest_files=[ "res://.import/tower_symbol_shooter_symbol.png-5cb4b2f54e09f03303d7d6d60242e651.stex" ]
-dest_md5="d4c15ccd69b22153ff97bc5be980908f"
+dest_files=[ "res://.import/tower_symbols_2.png-b7ba03ae6aa3af0d1e957558f32f9cf0.stex" ]
+dest_md5="0cde799ac05621cdf7518112e1dddd0e"
 
 [params]
 

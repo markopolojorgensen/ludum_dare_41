@@ -1,4 +1,5 @@
 DONE
+  center symbol numbers / fix symbol sprites
   bug: multiple towers appear selected after regaining access to a previously selected tower
   bug: falling through final platform (set global max speed?)
   BUG: restarting the game doesn't clear upgrades
