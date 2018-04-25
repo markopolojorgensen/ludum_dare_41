@@ -18,7 +18,7 @@
 [ext_resource path="res://decos/decorations_7.png" type="Texture" id=16]
 [ext_resource path="res://decos/decorations_8.png" type="Texture" id=17]
 
-[node name="level" type="Node2D" index="0"]
+[node name="level" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 

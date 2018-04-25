@@ -1,5 +1,4 @@
 TODO
-  bug: falling through final platform (set global max speed?)
   bug: permaslow mystery?
   bug: multiple towers appear selected after losing access to a third
 
@@ -12,6 +11,8 @@ TODO
 
 Significant Improvements
   Sanity
+    Music Manager
+    abstract movement behavior
     ABSTRACT SHOOTER BEHAVIOR FOR GOODNESS' SAKE
   Towers
     tower inventory indicators: li'l bubbles :D
