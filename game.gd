@@ -6,8 +6,10 @@ export(bool) var mute = false
 var active_cores = 0
 var winner = false
 
-
 func _ready():
+	# reset globals
+	global.reset()
+	
 	add_to_group("core_listeners")
 	$win_gate.connect("body_entered", self, "win_gate_entered")
 	

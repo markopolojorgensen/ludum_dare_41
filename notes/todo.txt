@@ -1,6 +1,5 @@
 TODO
   bug: falling through final platform (set global max speed?)
-  BUG: restarting the game doesn't clear upgrades
   bug: permaslow mystery?
   bug: multiple towers appear selected after losing access to a third
 

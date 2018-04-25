@@ -9,3 +9,8 @@ enum TOWER_TYPE {
 var enemy_count = 0
 
 var booms = false
+
+func reset():
+	enemy_count = 0
+	booms = false
+

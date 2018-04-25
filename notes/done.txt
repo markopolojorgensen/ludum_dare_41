@@ -1,4 +1,5 @@
 DONE
+  BUG: restarting the game doesn't clear upgrades
   hint: this game is better with a mouse than a trackpad
   arrow key support!
   more legible core numbers
