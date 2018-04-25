@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Ludum Dare 41"
+config/name="Crux Swarm: A Ludum Dare 41 Game"
 run/main_scene="res://intro.tscn"
 config/icon="res://icon.png"
 
