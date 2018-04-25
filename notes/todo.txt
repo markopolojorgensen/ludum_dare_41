@@ -1,5 +1,4 @@
 TODO
-  hint: this game is better with a mouse than a trackpad
   bug: falling through final platform (set global max speed?)
   BUG: restarting the game doesn't clear upgrades
   bug: permaslow mystery?

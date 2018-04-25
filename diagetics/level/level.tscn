@@ -18,7 +18,7 @@
 [ext_resource path="res://decos/decorations_7.png" type="Texture" id=16]
 [ext_resource path="res://decos/decorations_8.png" type="Texture" id=17]
 
-[node name="level" type="Node2D"]
+[node name="level" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -219,16 +219,32 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="wasd hint" type="Label" parent="help text" index="1"]
+[node name="movement hints" type="VBoxContainer" parent="help text" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -150.0
-margin_top = 335.0
-margin_right = 56.0
-margin_bottom = 349.0
+margin_left = -360.0
+margin_top = 350.0
+margin_right = -42.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+
+[node name="wasd hint" type="Label" parent="help text/movement hints" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 318.0
+margin_bottom = 14.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -238,21 +254,21 @@ size_flags_vertical = 4
 custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
 custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
 text = "WASD to move."
+align = 2
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="quit hint" type="Label" parent="help text" index="2"]
+[node name="quit hint" type="Label" parent="help text/movement hints" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -150.0
-margin_top = 355.0
-margin_right = 56.0
-margin_bottom = 369.0
+margin_top = 18.0
+margin_right = 318.0
+margin_bottom = 32.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -262,12 +278,37 @@ size_flags_vertical = 4
 custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
 custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
 text = "Esc to quit."
+align = 2
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="rave hint" type="Label" parent="help text" index="3"]
+[node name="no trackpad hint" type="Label" parent="help text/movement hints" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 36.0
+margin_right = 318.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "This game is better with a mouse than a trackpad."
+align = 2
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="rave hint" type="Label" parent="help text" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -291,7 +332,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="goal hint" type="Label" parent="help text" index="4"]
+[node name="goal hint" type="Label" parent="help text" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -315,7 +356,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="goal hint2" type="Label" parent="help text" index="5"]
+[node name="goal hint2" type="Label" parent="help text" index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -339,7 +380,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core charge level hint" type="Label" parent="help text" index="6"]
+[node name="core charge level hint" type="Label" parent="help text" index="5"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -363,7 +404,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_weapon_hint" type="Label" parent="help text" index="7"]
+[node name="core_weapon_hint" type="Label" parent="help text" index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -388,7 +429,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_shooter_hint" type="Label" parent="help text" index="8"]
+[node name="core_shooter_hint" type="Label" parent="help text" index="7"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -413,7 +454,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_speed_hint" type="Label" parent="help text" index="9"]
+[node name="core_speed_hint" type="Label" parent="help text" index="8"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -438,7 +479,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_amp_hint" type="Label" parent="help text" index="10"]
+[node name="core_amp_hint" type="Label" parent="help text" index="9"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -463,7 +504,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_aoe_slow_hint" type="Label" parent="help text" index="11"]
+[node name="core_aoe_slow_hint" type="Label" parent="help text" index="10"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -488,7 +529,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core_blast_hint" type="Label" parent="help text" index="12"]
+[node name="core_blast_hint" type="Label" parent="help text" index="11"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -513,7 +554,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="core count hint" type="Label" parent="help text" index="13"]
+[node name="core count hint" type="Label" parent="help text" index="12"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -539,7 +580,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors" ]
 
-[node name="more cores more towers hint" type="Label" parent="help text" index="14"]
+[node name="more cores more towers hint" type="Label" parent="help text" index="13"]
 
 anchor_left = 0.0
 anchor_top = 0.0
