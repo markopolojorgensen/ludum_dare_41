@@ -1,4 +1,6 @@
 DONE
+  arrow key support!
+  more legible core numbers
   hint: left click to shoot towards the cursor
   update all the links
   explosion gifs

@@ -1,7 +1,5 @@
 TODO
-  arrow key support!
   bug: permaslow when speedup tower is lost?
-  more legible core numbers
   hint: this game is better with a mouse than a trackpad
   bug: falling through final platform (set global max speed?)
   bug: multiple towers appear selected after losing access to a third
