@@ -4,7 +4,7 @@
 [ext_resource path="res://HUD/tower_symbol_shooter_symbol.png" type="Texture" id=2]
 [ext_resource path="res://HUD/tower_symbol_reticle.png" type="Texture" id=3]
 
-[node name="tower_selector_shooter" type="CenterContainer"]
+[node name="tower_selector_shooter" type="CenterContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0

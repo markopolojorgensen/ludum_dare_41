@@ -33,7 +33,7 @@ animations = [ {
 custom_solver_bias = 0.0
 radius = 400.0
 
-[node name="core" type="Node2D"]
+[node name="core" type="Node2D" index="0"]
 
 z_index = -1
 script = ExtResource( 1 )

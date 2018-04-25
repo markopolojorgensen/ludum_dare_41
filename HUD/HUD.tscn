@@ -39,7 +39,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[node name="HUD" type="CanvasLayer"]
+[node name="HUD" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )

@@ -1,6 +1,5 @@
 TODO
   bug: permaslow mystery?
-  bug: multiple towers appear selected after losing access to a third
 
   SKILL CHAINS
     define skill chains

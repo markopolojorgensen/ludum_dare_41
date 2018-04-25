@@ -15,6 +15,7 @@ func enable():
 func disable():
 	enabled = false
 	hide()
+	unfocused()
 
 func focused():
 	if enabled:
