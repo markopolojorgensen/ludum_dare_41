@@ -1,9 +1,9 @@
 TODO
-  bug: permaslow when speedup tower is lost?
   hint: this game is better with a mouse than a trackpad
   bug: falling through final platform (set global max speed?)
-  bug: multiple towers appear selected after losing access to a third
   BUG: restarting the game doesn't clear upgrades
+  bug: permaslow mystery?
+  bug: multiple towers appear selected after losing access to a third
 
   SKILL CHAINS
     define skill chains

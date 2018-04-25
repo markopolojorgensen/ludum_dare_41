@@ -1,5 +1,8 @@
 extends Node
 
+export(bool) var mute = false
+
+
 var active_cores = 0
 var winner = false
 
@@ -10,6 +13,14 @@ func _ready():
 	
 	$fade_layer/CenterContainer.show()
 	$fade_layer/AnimationPlayer.play("fadein")
+	
+	if mute:
+		$AudioStreamPlayer.set_volume_db(-50)
+		$AudioStreamPlayer2.set_volume_db(-50)
+		$AudioStreamPlayer3.set_volume_db(-50)
+		$AudioStreamPlayer4.set_volume_db(-50)
+		$AudioStreamPlayer5.set_volume_db(-50)
+		$AudioStreamPlayer6.set_volume_db(-50)
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_cancel"):

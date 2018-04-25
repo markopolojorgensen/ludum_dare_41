@@ -10,6 +10,10 @@ func _process(delta):
 		$sprite.play("left")
 	else:
 		$sprite.play("idle")
+	
+	$CanvasLayer/MarginContainer/VBoxContainer/max_speed.set_text(str($movement.max_speed))
+	$CanvasLayer/MarginContainer/VBoxContainer/lin_vel.set_text(str(get_linear_velocity().length()))
+	# $CanvasLayer/VBoxContainer/max_speed.set_text(str($movement.max_speed))
 
 func _integrate_forces(state):
 	$movement.do_movement(self, state)

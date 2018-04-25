@@ -25,7 +25,7 @@ func do_movement(body, state):
 	elif is_left:
 		body.apply_impulse(Vector2(), Vector2(-impulse_size * state.step, 0))
 	
-	if is_down:
+	if is_down and not Input.is_action_pressed("jump"):
 		body.apply_impulse(Vector2(), Vector2(0, impulse_size * state.step))
 	
 	# going too fast
