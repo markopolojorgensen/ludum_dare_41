@@ -45,7 +45,7 @@ func place_tower():
 	
 	tower_lists[current_tower_type].append(inst)
 	while tower_lists[current_tower_type].size() > max_tower_count:
-		print("too many towers")
+		# print("too many towers")
 		tower_lists[current_tower_type].pop_front().queue_free()
 
 func enable():

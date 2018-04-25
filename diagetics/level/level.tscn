@@ -60,8 +60,6 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="cores" type="Node2D" parent="." index="2"]
 
-editor/display_folded = true
-
 [node name="core_weapon" parent="cores" index="0" instance=ExtResource( 3 )]
 
 position = Vector2( 730, 360 )
@@ -522,10 +520,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 3870.0
-margin_top = -4155.0
-margin_right = 4201.0
-margin_bottom = -4141.0
+margin_left = 3130.0
+margin_top = -3510.0
+margin_right = 3461.0
+margin_bottom = -3496.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -535,6 +533,32 @@ size_flags_vertical = 4
 custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
 custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
 text = "There are six cores."
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="more cores more towers hint" type="Label" parent="help text" index="14"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1370.0
+margin_top = -1985.0
+margin_right = 1760.0
+margin_bottom = -1971.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color = Color( 0.329412, 0.423529, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0.0509804, 0.0235294, 0.109804, 1 )
+text = "The more cores you activate, the more towers you can place."
 align = 1
 valign = 1
 percent_visible = 1.0

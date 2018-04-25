@@ -1,6 +1,6 @@
 extends Node2D
 
-var slow_amount = 1
+var slow_amount = 2
 
 func _ready():
 	var zone = get_parent().get_zone()
@@ -17,7 +17,7 @@ func body_exited(body):
 		body.unslow(slow_amount)
 
 func get_amped():
-	slow_amount = 2
+	slow_amount += 1
 
 func get_un_amped():
-	slow_amount = 1
+	slow_amount -= 1

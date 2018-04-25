@@ -1,18 +1,53 @@
 TODO
+  hint: left click to shoot towards the cursor
+  hint: look for hints
+  arrow key support!
+  bug: permaslow when speedup tower is lost?
+  more legible core numbers
+  hint: this game is better with a mouse than a trackpad
+  bug: falling through final platform (set global max speed?)
+  bug: multiple towers appear selected after losing access to a third
   BUG: restarting the game doesn't clear upgrades
-  towers should shoot at enemy bodies, not their feet
-  parallax background visuals
-  particle effects increase as effect increases (via amp, multiple sources, etc.)
-  towers spin
-  modulate core shield indicators when especially low
-  audio should fade in / out (lerp?)
-  hint: The number of cores you have activated determines the number of towers you can place
-    The more cores you have activated, the more towers you can place.
+
+  SKILL CHAINS
+    define skill chains
+    force player to second core?
+    hints
+      bullets shoot at the mouse cursor
+      towers appear at the mouse cursor
+
+Significant Improvements
+  Sanity
+    ABSTRACT SHOOTER BEHAVIOR FOR GOODNESS' SAKE
+  Towers
+    tower inventory indicators: li'l bubbles :D
+      hint: The number of cores you have activated determines the number of towers you can place
+        The more cores you have activated, the more towers you can place.
+    Can't place more towers once you hit inventory limit
+    towers should shoot at enemy bodies, not their feet
+    particle effects increase as effect increases (via amp, multiple sources, etc.)
+    rework amp improvements so they stack on everything
+      reworking stacking in general, effects on towers, enemies, player
+    tower animations 
+      spin when active
+      spin faster when more active :D
+      start up / build animation
+      tear down / destroy animation
+  Environment / Level
+    parallax background visuals
+      more area clues to help with exploring / getting lost =(
+  Cores
+    modulate core shield indicators when especially low
+    New Core: MAP
+    New Core: Tower Inventory Expansion
+
+  Music
+    audio should fade in / out (lerp?)
 
   fullscreen support
   enemies fade in on spawn
   cooler font
-  center symbol numbers =(
+  center symbol numbers =( (i.e. fix symbol sprites)
   increase core shields by shooting at it
   custom enemy reclaim core animation
   player dash animation
@@ -20,7 +55,6 @@ TODO
   towers can only target enemies they can "see" i.e. don't shoot at enemies you can't hit
 
   (release)
-  update all the links
   soundcloud the music
 
 

@@ -1,0 +1,26 @@
+SKILL CHAINS
+
+What does the player need to know before being turned completely loose?
+What do they learn after being turned loose?
+
+movement
+
+shooting
+  shoot towards the mouse cursor
+  recoil management
+
+exploration
+
+tower management
+  how many towers do I have to leave here?
+
+
+
+
+
+
+
+
+
+
+
