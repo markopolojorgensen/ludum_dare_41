@@ -64,6 +64,7 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 position = Vector2( 730, 360 )
 help_text_label_path = NodePath("../../help text/core_weapon_hint")
+help_text = "Left click to shoot towards the cursor."
 core_number = 1
 
 [node name="core_shooter" parent="cores" index="1" instance=ExtResource( 3 )]
@@ -71,7 +72,7 @@ core_number = 1
 position = Vector2( 2390, 1000 )
 core_name = "shooter"
 help_text_label_path = NodePath("../../help text/core_shooter_hint")
-help_text = "1,2,3 to pick a tower. Right click to place."
+help_text = "1,2,3 to pick a tower. Right click to place at cursor."
 core_number = 2
 
 [node name="core_speed" parent="cores" index="2" instance=ExtResource( 3 )]
@@ -152,8 +153,6 @@ position = Vector2( 5390, -1040 )
 flip = true
 
 [node name="help text" type="Node2D" parent="." index="4"]
-
-editor/display_folded = true
 
 [node name="first core" type="VBoxContainer" parent="help text" index="0"]
 
@@ -346,10 +345,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1985.0
-margin_top = 1190.0
-margin_right = 2316.0
-margin_bottom = 1204.0
+margin_left = 955.0
+margin_top = 1100.0
+margin_right = 1286.0
+margin_bottom = 1114.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -371,9 +370,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 565.0
-margin_top = 435.0
+margin_top = 455.0
 margin_right = 896.0
-margin_bottom = 449.0
+margin_bottom = 469.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -396,9 +395,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 2225.0
-margin_top = 1080.0
+margin_top = 1095.0
 margin_right = 2556.0
-margin_bottom = 1094.0
+margin_bottom = 1109.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -421,9 +420,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 1005.0
-margin_top = -1140.0
+margin_top = -1120.0
 margin_right = 1336.0
-margin_bottom = -1126.0
+margin_bottom = -1106.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -446,9 +445,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 3535.0
-margin_top = -265.0
+margin_top = -240.0
 margin_right = 3866.0
-margin_bottom = -251.0
+margin_bottom = -226.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -470,10 +469,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 7335.0
-margin_top = -995.0
-margin_right = 7666.0
-margin_bottom = -981.0
+margin_left = 7315.0
+margin_top = -975.0
+margin_right = 7646.0
+margin_bottom = -961.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -495,10 +494,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 6815.0
-margin_top = 1325.0
-margin_right = 7146.0
-margin_bottom = 1339.0
+margin_left = 6810.0
+margin_top = 1345.0
+margin_right = 7141.0
+margin_bottom = 1359.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -598,6 +597,8 @@ script = ExtResource( 9 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="decos" type="Node2D" parent="." index="7"]
+
+editor/display_folded = true
 
 [node name="Sprite" type="Sprite" parent="decos" index="0"]
 

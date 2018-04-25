@@ -1,6 +1,4 @@
 TODO
-  hint: left click to shoot towards the cursor
-  hint: look for hints
   arrow key support!
   bug: permaslow when speedup tower is lost?
   more legible core numbers
@@ -34,6 +32,7 @@ Significant Improvements
       start up / build animation
       tear down / destroy animation
   Environment / Level
+    New entry hallway w/ hint: look for hints
     parallax background visuals
       more area clues to help with exploring / getting lost =(
   Cores

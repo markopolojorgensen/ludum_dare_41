@@ -1,4 +1,5 @@
 DONE
+  hint: left click to shoot towards the cursor
   update all the links
   explosion gifs
   time lapse video
