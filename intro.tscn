@@ -49,7 +49,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[node name="intro" type="CenterContainer"]
+[node name="intro" type="CenterContainer" index="0"]
 
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.0

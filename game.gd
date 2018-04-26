@@ -2,7 +2,6 @@ extends Node
 
 export(bool) var mute = false
 
-
 var active_cores = 0
 var winner = false
 

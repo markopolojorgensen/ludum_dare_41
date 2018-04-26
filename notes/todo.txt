@@ -1,13 +1,9 @@
 TODO
+  add symbols to cores
   bug: permaslow mystery?
 
 
-  SKILL CHAINS
-    define skill chains
-    force player to second core?
-    hints
-      bullets shoot at the mouse cursor
-      towers appear at the mouse cursor
+
 
 Significant Improvements
   Sanity
@@ -23,6 +19,10 @@ Significant Improvements
     particle effects increase as effect increases (via amp, multiple sources, etc.)
     rework amp improvements so they stack on everything
       reworking stacking in general, effects on towers, enemies, player
+    Towers should communicate their aoe somehow
+      hover over tower to show its aoe
+      animation - faint glow?
+    shooter tower gets mini crosshairs
     tower animations 
       spin when active
       spin faster when more active :D
@@ -32,15 +32,32 @@ Significant Improvements
     New entry hallway w/ hint: look for hints
     parallax background visuals
       more area clues to help with exploring / getting lost =(
+    destroyable rubble
+    darken environment options
+    moar background objects
   Cores
     modulate core shield indicators when especially low
-    New Core: MAP
+    New Core: Map
     New Core: Tower Inventory Expansion
-
+    New Core: Fly
   Music
     audio should fade in / out (lerp?)
+  UI
+    horizontal core widget layout
+    core widgets show enabled vs disabled, animations when a core goes offline
+      jitter when close to dying
+      sound effects
+    custom mouse cursor Q_Q - crosshairs
+    controller support
+    fullscreen support
+  Story
+    strobe, dico ball, etc. - dance party when enough enemies show up
+    feed enemies marshmallows to get them to leave
+  Player
+    floor contact detection with a raycast?
 
-  fullscreen support
+
+
   enemies fade in on spawn
   cooler font
   increase core shields by shooting at it
