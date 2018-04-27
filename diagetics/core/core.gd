@@ -52,7 +52,7 @@ func _process(delta):
 			get_node(help_text_label_path).set_text(help_text)
 	
 	$shield.value -= uncharge_rate * enemies * delta
-	if $shield.value <= 0 and old_shield > 0:
+	if $shield.value <= 0 and old_shield > 0 and is_activated:
 		is_activated = false
 		get_tree().call_group("core_listeners", "core_deactivated", core_name)
 		get_node(help_text_label_path).set_text("")
